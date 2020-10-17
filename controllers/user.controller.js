@@ -27,10 +27,7 @@ module.exports.profile = function (req, res) {
 // hiển thị form đăng ký
 module.exports.register = function (req, res, next) {
   const messages = req.flash("error");
-  res.render("user/registration", {
-    messages: messages,
-    hasErrors: messages.length > 0,
-  });
+  res.render("./user/user-registration");
 };
 
 // =====================================

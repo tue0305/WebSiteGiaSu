@@ -19,7 +19,7 @@ const userSchema = new Schema({
     type: Date,
     default: null,
     min: '1950-09-28',
-    max: '1994-05-23',
+    max: Date.now(),
      
   },
   //Chức vụ
@@ -41,7 +41,10 @@ const userSchema = new Schema({
   Class: [{
     type: mongoose.Types.ObjectId,
     ref: 'Class'
-  }]
+  }],
+
+  //trạng thái hoạt động
+  Active: Boolean,
 });
 
 

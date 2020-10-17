@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www babel src -d lib",
-    "build": "babel src -d lib"
+    "start": "nodemon ./bin/www",
+     "build": "babel src -d lib"
   },
   "dependencies": {
     "@admin-bro/express": "^3.0.1",
