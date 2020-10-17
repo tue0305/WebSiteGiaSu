@@ -1,36 +1,37 @@
 extends ./layout
 
-block body
-  h1 Form đăng ký tài khoản 
-  form
-  .form-group
-    label(for='exampleInputEmail1') Email:
-    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
-    small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
-  .form-group
-    label(for='exampleInputPassword1') Mật khẩu:
-    input#exampleInputPassword1.form-control(type='password')
-  .form-group
-    label(for='exampleInputName1') Họ tên:
-    input#exampleInputName1.form-control(type='text')
-  .form-group
-    label(for='exampleInputPhone1') Số điện thoại:
-    input#exampleInputPhone1.form-control(Placeholder="Điền số điện thoại" type='tel')
-  .form-group
-    label(for='exampleInputDOB1') Ngày sinh:
-    //- // Date input
-    input#exampleInputDOB1(type='date' name='DOB')
-  .form-group
-    .form-check.form-check-inline
-      input#inlineRadio1.form-check-input(type='radio' name='inlineRadioOptions' value='Male')
-      label.form-check-label(for='inlineRadio1') Nam
-    .form-check.form-check-inline
-      input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='Female')
-      label.form-check-label(for='inlineRadio2') Nữ
+block formDangKy
+  .tm-bg-white.ie-container-width-fix-2
+            .container.ie-h-align-center-fix
+              .row
+                .col-xs-12.ml-auto.mr-auto.ie-container-width-fix
+                  form.tm-search-form.tm-section-pad-2(action='index.html' method='get')
+                    h2 Đăng ký
+                    .form-row.tm-search-form-row
+                      label(for='exampleInputEmail1') Email:
+                      input#exampleInputEmail1.form-control(name type='email' aria-describedby='emailHelp')
+                      small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
+                    .form-row.tm-search-form-row
+                      label(for='exampleInputPassword1') Mật khẩu:
+                      input#exampleInputPassword1.form-control(type='password')
+                    .form-row.tm-search-form-row
+                      label(for='exampleInputName1') Họ tên:
+                      input#exampleInputName1.form-control(type='text')
+                    .form-row.tm-search-form-row
+                      label(for='exampleInputPhone1') Số điện thoại:
+                      input#exampleInputPhone1.form-control(Placeholder="Điền số điện thoại" type='tel')
+                    .form-row.tm-search-form-row
+                      label(for='exampleInputDOB1') Ngày sinh:
+                      //- // Date input
+                      input#exampleInputDOB1.form-control(type='date' name='DOB')
+                    .form-row.tm-search-form-row
+                      .form-check.form-check-inline
+                        input#inlineRadio1.form-check-input(type='radio' name='inlineRadioOptions' value='Male')
+                        label.form-check-label(for='inlineRadio1') Nam
+                      .form-check.form-check-inline
+                        input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='Female')
+                        label.form-check-label(for='inlineRadio2') Nữ
 
-
-
+                    button.btn.btn-primary(type='submit') Submit
 
   
-  
-  button.btn.btn-primary(type='submit') Submit
