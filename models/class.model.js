@@ -1,32 +1,34 @@
-import mongoose from "mongoose";
-//import uniqueValidator from 'mongoose-unique-validator';
-require('mongoose-currency').loadType(mongoose);
+const mongoose = require('mongoose')
+const uniqueValidator  =  require('mongoose-unique-validator');
+
 const { Schema } = mongoose;
+require('mongoose-currency').loadType(mongoose);
+
 
 const classSchema = new Schema({
   //Địa điểm
   Location: {
     provinceId: Number,
-    provinceName: string,
+    provinceName: String,
     Address: String,
   },
   //thời khóa biểu
   Schedule: [{
     type: mongoose.Types.ObjectId,
-    ref = 'Schedule'
+    ref : 'Schedule'
   }],
   //Môn học giảng dạy
   Subject: {
     type: mongoose.Types.ObjectId,
-    ref = 'Subject',
+    ref: 'Subject',
   },
   Description: String,
 
   //Thông tin gia sư nhận lớp
   User: {
-    userId = {
-      type: mongoose.Types.ObjectId,
-      ref = 'User'
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'User'
     },
     phoneNumber: Number,
   },
@@ -39,5 +41,4 @@ const classSchema = new Schema({
 });
 
 classSchema.plugin(uniqueValidator);
-
 module.exports = mongoose.model('Class', classSchema, 'classes');

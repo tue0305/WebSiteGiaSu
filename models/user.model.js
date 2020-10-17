@@ -1,5 +1,6 @@
-import mongoose from "mongoose";
-import uniqueValidator from 'mongoose-unique-validator';
+const { datepickerStyle } = require('admin-bro');
+const mongoose = require('mongoose')
+const uniqueValidator  =  require('mongoose-unique-validator');
 
 const { Schema } = mongoose;
 
@@ -16,13 +17,16 @@ const userSchema = new Schema({
   //Ngày sinh
   DOB: {
     type: Date,
-    default: null
+    default: null,
+    min: '1950-09-28',
+    max: '1994-05-23',
+     
   },
   //Chức vụ
   Role: {
     type: mongoose.Types.ObjectId,
     default: null,
-    ref = useRef('Role')
+    ref: 'Role'
   },
   Password: {
     type: String,
@@ -35,7 +39,8 @@ const userSchema = new Schema({
   },
   //Các lớp đã nhận
   Class: [{
-    type: mongoose.Types.ObjectId, ref = 'Class'
+    type: mongoose.Types.ObjectId,
+    ref: 'Class'
   }]
 });
 
