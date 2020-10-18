@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const uniqueValidator  =  require('mongoose-unique-validator');
 
 const { Schema } = mongoose;
-
+const GENDER = ["Male", "Female"];
 const userSchema = new Schema({
   Name: String, // String is shorthand for {type: String}
   phoneNumber: Number,
@@ -13,7 +13,13 @@ const userSchema = new Schema({
     unique: true,
     index: true,
   },
-  Gender: Boolean, // Male is 1 and Female is 0
+
+  Avartar: String,
+  
+  Gender: {
+    type: String,
+    enum: GENDER,
+},  // GIỚI TÍNH
   //Ngày sinh
   DOB: {
     type: Date,
@@ -31,11 +37,6 @@ const userSchema = new Schema({
   Password: {
     type: String,
     required: true,
-  },
-  Username: {
-    type: String,
-    required: true,
-    unique: true
   },
   //Các lớp đã nhận
   Class: [{

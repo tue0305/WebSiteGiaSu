@@ -2,35 +2,32 @@ extends ./layout
 
 block body
   h1 Form đăng ký tài khoản 
-  form
-  .form-group
-    label(for='exampleInputEmail1') Email:
-    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
-    small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
-  .form-group
-    label(for='exampleInputPassword1') Mật khẩu:
-    input#exampleInputPassword1.form-control(type='password')
-  .form-group
-    label(for='exampleInputName1') Họ tên:
-    input#exampleInputName1.form-control(type='text')
-  .form-group
-    label(for='exampleInputPhone1') Số điện thoại:
-    input#exampleInputPhone1.form-control(Placeholder="Điền số điện thoại" type='tel')
-  .form-group
-    label(for='exampleInputDOB1') Ngày sinh:
-    //- // Date input
-    input#exampleInputDOB1(type='date' name='DOB')
-  .form-group
-    .form-check.form-check-inline
-      input#inlineRadio1.form-check-input(type='radio' name='inlineRadioOptions' value='Male')
-      label.form-check-label(for='inlineRadio1') Nam
-    .form-check.form-check-inline
-      input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='Female')
-      label.form-check-label(for='inlineRadio2') Nữ
-
-
-
-
-  
-  
-  button.btn.btn-primary(type='submit') Submit
+  form(action ='/registration' type='submit' method='post')
+    .form-group
+      label(for='exampleInputEmail1') Email:
+      input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' name='email')
+      small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
+    .form-group
+      label(for='exampleInputPassword1') Mật khẩu:
+      input#exampleInputPassword1.form-control(type='password' name='password')
+    .form-group
+      label(for='exampleInputName1') Họ tên:
+      input#exampleInputName1.form-control(type='text' name='name')
+    .form-group
+      label(for='exampleInputPhone1') Số điện thoại:
+      input#exampleInputPhone1.form-control(Placeholder="Điền số điện thoại" type='tel' name='phone')
+    .form-group
+      label(for='exampleInputDOB1') Ngày sinh:
+      //- // Date input
+      input#exampleInputDOB1(type='date' name='dob')
+    .form-group
+      .form-check.form-check-inline
+        input#inlineRadio1.form-check-input(type='radio' name='gender' value='Male')
+        label.form-check-label(for='inlineRadio1') Nam
+      .form-check.form-check-inline
+        input#inlineRadio2.form-check-input(type='radio' name='gender' value='Female')
+        label.form-check-label(for='inlineRadio2') Nữ
+    .form-group
+      button.btn.btn-primary(type='submit' value='Submit') Submit
+      //- button.btn.btn-primary(type='submit') Submit
+      
