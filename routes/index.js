@@ -9,6 +9,8 @@ const controller = require("../controllers/index.controller");
 router.get('/', controller.Index);
 router.get('/registration', controller.Registration);
 
-
+// trang đăng nhập
+router.get('/', controller.Index);
+router.get('/signin', controller.signin);
 
 module.exports = router;
