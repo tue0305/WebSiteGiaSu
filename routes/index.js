@@ -15,9 +15,8 @@ const controller = require("../controllers/index.controller");
 router.get('/', controller.Index);
 
 router.get('/registration', controller.getRegistration);
-router
-    .post('/registration', controller.postRegistration)
-    // .get('/registration', controller.getRegistration);
+router.post('/registration', controller.postRegistration)
+    //.get('/registration', controller.getRegistration);
     
 
 

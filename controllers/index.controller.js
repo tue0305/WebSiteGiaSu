@@ -1,5 +1,8 @@
 const express = require('express');
-var body = require('body-parser');
+const body = require('body-parser');
+const mongoose = require('mongoose');
+var User = require('../models/user.model');
+var dateFormat = require('date-format');
 //trang chủ
 module.exports.Index = function (req, res, next)
 { 
@@ -13,14 +16,30 @@ module.exports.getRegistration = function (req, res, next)
     })
 }
 module.exports.postRegistration = function (req, res, next)
-{ 
-    let email = req.body.email
-    let password = req.body.password
-    let name = req.body.name
-    let phone = req.body.phone
-    let gender = req.body.gender
-    let dob = req.body.dob
-    console.log(req.body)
-    res.render('index')
+{
+    var dateValue = dateFormat('yyyy-MM-dd')
+    var newUser = new User(
+        {
+            phoneNumber: req.body.phone,
+            Email: req.body.email,
+            // Avartar = req.body.avatar
+            Username: req.body.username,
+            Password: req.body.password,
+            Name: req.body.name,
+            
+            Gender: req.body.gender,
+            DOB: new Date(dateValue),
+            Active: true
+        });
+    newUser.save(function (err) {
+        if (err) {
+            console.log(err.message);
+        }
+        else {
+            res.send('User Created successfully')
+            res.render('index') 
+        }
+        
+    })
 }
 

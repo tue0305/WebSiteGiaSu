@@ -5,14 +5,15 @@ const React = require ('react');
 const ReactDOM = require ('react-dom');
 require('express-async-errors');
 const mongoose = require('mongoose');
-const bodyparser = require('body-parser');
+const bodyParser = require('body-parser');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const { DatePicker, DatePickerProps } = require('@admin-bro/design-system');
 
 // admin handler
 const AdminBro = require('admin-bro')
+const passwordFeature = require('@admin-bro/passwords')
+const bcrypt = require('bcryptjs')
 const AdminBroMongoose = require('@admin-bro/mongoose')
 const AdminBroExpress = require('@admin-bro/express')
 const app = express()
@@ -20,8 +21,7 @@ AdminBro.registerAdapter(AdminBroMongoose)
 require('./models/schedule.model')
 require('./models/subject.model')
 require('./models/class.model')
-require('./models/user.model')
-require('./models/role.model')
+const User = require('./models/user.model')
 mongoose.connect(process.env.MONGODB_URL,
   {
     useNewUrlParser: true,
@@ -37,23 +37,31 @@ const run = async () => {
   })
   //...
 }
-// const setDatePicker = async () => {
-//   const [startDate, setStartDate] = useState(new Date());
-//   return (
-//     <ReactDOM.DatePicker
-//       selected={startDate}
-//       onChange={date => setStartDate(date)}
-//       peekNextMonth
-//       showMonthDropdown
-//       showYearDropdown
-//       dropdownMode="select"
-//     />
-//   );
-// };
-// run()
+const options = {
+  resources: [{
+    resource: User,
+    options: {
+      properties: { encrypted: { isVisible: false } },
+    },
+    features: [passwordFeature({
+      // PasswordsOptions
+      properties: {
+        // to this field will save the hashed password
+        encryptedPassword: 'encrypted'
+      },
+      hash: bcrypt.hash,
+    })]
+  }]
+}
 const adminBro = new AdminBro({
+  branding: {
+    companyName: 'TutorViking',
+  },
   databases: [mongoose],
   rootPath: '/admin',
+  options,
+  favicon: '/public/favicon/favicon'
+
 })
 
 const router = AdminBroExpress.buildRouter(adminBro)
@@ -76,8 +84,8 @@ app.use(express.static(__dirname + '/views/'));
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(bodyparser.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public/')));
 app.use('/', indexRouter);
