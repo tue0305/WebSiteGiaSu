@@ -2,8 +2,7 @@ extends ./template/master
 doctype html
 html(lang ='en')
   head
-    block prepend head
-      
+    block append head
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible' content='IE=edge')
       meta(name='viewport' content='width=device-width, initial-scale=1')
@@ -24,36 +23,37 @@ html(lang ='en')
       link(rel='shortcut icon' href='/favicon.ico' type='image/x-icon' )
       meta(name='msapplication-TileColor' content='#ffffff')
       meta(name='msapplication-TileImage' content='/ms-icon-144x144.png')
-      meta(name='theme-color' content='#ffffff')
-      link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
-      link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
-      link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-      link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js')
-  body 
-block menu
-    .container
-      .row
-        nav.navbar.navbar-expand-lg.narbar-light
-          a.navbar-brand.mr-auto(href='/')
-            img(src='img/ms-icon-70x70.png' alt='Site logo')
-            |                             
-          button#nav-toggle.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#mainNav' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-          #mainNav.collapse.navbar-collapse.tm-bg-white
-            ul.navbar-nav.ml-auto
-              li.nav-item
-                a.nav-link(href='#top')
-                  | Trang chủ 
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href='#tm-section-4') Đầu tư
-              li.nav-item
-                a.nav-link(href='#tm-section-5') Bài viết
-              li.nav-item
-                a.nav-link(href='#tm-section-6') Liên hệ
-              li.nav-item
-                a.nav-link(href='#') Đăng nhập
-              li.nav-item
-                a.nav-link(href='/registration') Đăng Ký
+      script(src='https://kit.fontawesome.com/77fac3ae4f.js' crossorigin='anonymous')
 
-block formDangKy
+      meta(name='theme-color' content='#ffffff')
+      link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+  body  
+        block menu
+          .container
+            .row
+              nav.navbar.navbar-expand-lg.narbar-light
+                a.navbar-brand.mr-auto(href='/')
+                  img(src='img/ms-icon-70x70.png' alt='Site logo')                       
+                button#nav-toggle.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#mainNav' aria-expanded='false' aria-label='Toggle navigation')
+                  span.navbar-toggler-icon
+                #mainNav.collapse.navbar-collapse.tm-bg-white
+                  ul.navbar-nav.ml-auto
+                    li.nav-item
+                      a.nav-link(href='#top')
+                        | Trang chủ 
+                        span.sr-only (current)
+                    li.nav-item
+                      a.nav-link(href='#tm-section-4') Đầu tư
+                    li.nav-item
+                      a.nav-link(href='#tm-section-5') Bài viết
+                    li.nav-item
+                      a.nav-link(href='#tm-section-6') Liên hệ
+                    li.nav-item
+                      a#login.nav-link(href='/login' onclick='parent.location="/login"; return false;') Đăng nhập
+                    li.nav-item
+                      a#regis.nav-link(href='/registration' onclick='parent.location="/registration"; return false;') Đăng Ký
+        
+        block form
+    
+
+        

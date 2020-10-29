@@ -1,28 +1,27 @@
 doctype html
 html(lang='en')
-  head
-    
-block head    
-    //- title TutorViking
-    //-   Template 2095 Level
-    //-   http://www.tooplate.com/view/2095-level
-    //- // load stylesheets
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
-    //- // Google web font "Open Sans"
-    //- link(rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.min.css')
-    //- // Font Awesome
-    //- link(rel='stylesheet' href='css/bootstrap.min.css')
-    //- // Bootstrap style
-    link(rel='stylesheet' type='text/css' href='slick/slick.css')
-    link(rel='stylesheet' type='text/css' href='slick/slick-theme.css')
-    link(rel='stylesheet' type='text/css' href='css/datepicker.css')
-    link(rel='stylesheet' href='css/tooplate-style.css')
-    //- // Templatemo style
-    //- // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-    //- // WARNING: Respond.js doesn't work if you view the page via file://
-    //- //if lt IE 9
-    //-   script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
-    //-   script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  head 
+    block head  
+      //- title TutorViking
+      //-   Template 2095 Level
+      //-   http://www.tooplate.com/view/2095-level
+      //- // load stylesheets
+      link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+      //- // Google web font "Open Sans"
+      link(rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.min.css')
+      //- // Font Awesome
+      link(rel='stylesheet' href='css/bootstrap.min.css')
+      //- // Bootstrap style
+      link(rel='stylesheet' type='text/css' href='slick/slick.css')
+      link(rel='stylesheet' type='text/css' href='slick/slick-theme.css')
+      link(rel='stylesheet' type='text/css' href='css/datepicker.css')
+      link(rel='stylesheet' href='css/tooplate-style.css')
+      //- // Templatemo style
+      //- // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+      //- // WARNING: Respond.js doesn't work if you view the page via file://
+      //- //if lt IE 9
+      //-   script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      //-   script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
     #top.tm-main-content
       .tm-top-bar-bg
@@ -37,7 +36,7 @@ block head
                   |                                 Level
                 button#nav-toggle.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#mainNav' aria-expanded='false' aria-label='Toggle navigation')
                   span.navbar-toggler-icon
-                #mainNav.collapse.navbar-collapse.tm-bg-white         
+                #mainNav.collapse.navbar-collapse.tm-bg-white
                   ul.navbar-nav.ml-auto
                     li.nav-item
                       a.nav-link(href='#top')
@@ -50,7 +49,7 @@ block head
                     li.nav-item
                       a.nav-link(href='#tm-section-6') Contact Us
       #tm-section-1.tm-section.tm-bg-img
-        block formDangKy
+        block form
           .tm-bg-white.ie-container-width-fix-2
             .container.ie-h-align-center-fix
               .row
@@ -124,7 +123,7 @@ block head
               a.tm-color-white.tm-btn-white-bordered(href='#') Subscribe Newletters
       .tm-section.tm-position-relative
         svg.tm-section-down-arrow(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none')
-          polygon(fill='#ee5057' points='0,0  100,0  50,60')
+          polygon(fill='#ffab00' points='0,0  100,0  50,60')
         .container.tm-pt-5.tm-pb-4
           .row.text-center
             article.col-sm-12.col-md-4.col-lg-4.col-xl-4.tm-article
@@ -328,22 +327,22 @@ block head
       function setCarousel() {
         if ($('.tm-article-carousel').hasClass('slick-initialized')) {
           $('.tm-article-carousel').slick('destroy');
-      }
-      if($(window).width() < 438){
-      // Slick carousel
-        $('.tm-article-carousel').slick({
-          infinite: false,
-          dots: true,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        });
-      }
-      else {
-        $('.tm-article-carousel').slick({
-          infinite: false,
-          dots: true,
-          slidesToShow: 2,
-          slidesToScroll: 1
+        }
+        if($(window).width() < 438){
+        // Slick carousel
+          $('.tm-article-carousel').slick({
+            infinite: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        }
+        else {
+          $('.tm-article-carousel').slick({
+            infinite: false,
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
           });
         }
       }
@@ -380,7 +379,7 @@ block head
             $(".tm-top-bar").addClass("active");
           }
           else {
-      //remove the background property so it comes transparent again (defined in your css)
+        //- //remove the background property so it comes transparent again (defined in your css)
             $(".tm-top-bar").removeClass("active");
           }
         });
@@ -395,18 +394,18 @@ block head
         $(window).resize(function() {
           setCarousel();
           setPageNav();
-        });
-        // Close navbar after clicked
+      });
+      // Close navbar after clicked
         $('.nav-link').click(function(){
           $('#mainNav').removeClass('show');
         });
-        // Control video
+      // Control video
         $('.tm-btn-play').click(function() {
           togglePlayPause();
         });
         $('.tm-btn-pause').click(function() {
           togglePlayPause();
         });
-        // Update the current year in copyright
+      // Update the current year in copyright
         $('.tm-current-year').text(new Date().getFullYear());
       });

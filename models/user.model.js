@@ -16,13 +16,13 @@ const userSchema = new Schema({
     index: true,
   },
 
-  Avartar: String,
+  Avatar: String,
   
   Gender: {
     type: String,
     enum: GENDER,
     default: null,
-},  // GIỚI TÍNH
+  },  // GIỚI TÍNH
   //Ngày sinh
   DOB: {
     type: Date,
@@ -66,7 +66,12 @@ userSchema.pre('save', async function (next) {
   } catch (error) {
     next(error)
   }
-})
+});
+
+
+userSchema.methods.validatePassword = async function validatePassword(data) {
+  return bcrypt.compare(data, this.Password);
+};
 
 userSchema.plugin(uniqueValidator);
 module.exports = mongoose.model('User', userSchema, 'users');

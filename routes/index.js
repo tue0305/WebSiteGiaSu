@@ -15,10 +15,10 @@ const controller = require("../controllers/index.controller");
 router.get('/', controller.Index);
 
 router.get('/registration', controller.getRegistration);
-router.post('/registration', controller.postRegistration)
-    //.get('/registration', controller.getRegistration);
-    
+router.post('/registration', controller.postRegistration)    
 
-
+// trang đăng nhập
+router.get('/login', controller.getLogin);
+router.post('/login', controller.postLogin);
 
 module.exports = router;

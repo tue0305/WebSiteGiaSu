@@ -1,30 +1,22 @@
-extends ./layout
+extends layout
 doctype html
 html(lang='en')
-    body    
-block append menu
-//- block menu
-    .container
-      .row
-        nav.navbar.navbar-expand-lg.narbar-light
-          a.navbar-brand.mr-auto(href='#')
-            img(src='img/ms-icon-70x70.png' alt='Site logo')
-            |                             
-          button#nav-toggle.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#mainNav' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-          #mainNav.collapse.navbar-collapse.tm-bg-white
-            ul.navbar-nav.ml-auto
-              li.nav-item
-                a.nav-link(href='#top')
-                  | Trang chủ 
-                  span.sr-only (current)
-              li.nav-item
-                a.nav-link(href='#tm-section-4') Đầu tư
-              li.nav-item
-                a.nav-link(href='#tm-section-5') Bài viết
-              li.nav-item
-                a.nav-link(href='#tm-section-6') Liên hệ
-              li.nav-item
-                a.nav-link(href='#') Đăng nhập
-              li.nav-item
-                a.nav-link(href='/registration' ) Đăng Ký
+  body   
+        prepend menu
+        block form
+          .container.ie-h-align-center-fix
+            .row 
+              .col-xs-12.ml-auto.mr-auto.ie-container-width-fix
+                form.tm-search-form.tm-section-pad-2(action='index.html' method='get')
+                  .form-row.tm-search-form-row
+                    .form-group.tm-form-element.tm-form-element-50
+                      i.fa.fa-map-marker.fa-2x.tm-form-element-icon
+                      input#inputCity.form-control(name='city' type='text' placeholder='Type your destination...')
+                    .form-group.tm-form-element.tm-form-element-50
+                      i.fa.fa-calendar.fa-2x.tm-form-element-icon
+                      input#inputCheckIn.form-control(name='check-in' type='text' placeholder='Check In')
+                    .form-group.tm-form-element.tm-form-element-50
+                      i.fa.fa-calendar.fa-2x.tm-form-element-icon
+                      input#inputCheckOut.form-control(name='check-out' type='text' placeholder='Check Out')
+                    .form-group.tm-form-element.tm-form-element-50
+                      button.btn.btn-primary.tm-btn-search(type='submit') Tìm kiếm
