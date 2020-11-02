@@ -1,71 +1,56 @@
-extends ./template/dangky
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
-    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js')
-block menu
-  .container
-            .row
-              nav.navbar.navbar-expand-lg.narbar-light
-                a.navbar-brand.mr-auto(href='#')
-                  img(src='img/logo.png' alt='Site logo')
-                  |                                Kết Nối
-                button#nav-toggle.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#mainNav' aria-expanded='false' aria-label='Toggle navigation')
-                  span.navbar-toggler-icon
-              
-                #mainNav.collapse.navbar-collapse.tm-bg-white
-                
-                  ul.navbar-nav.ml-auto
-                    li.nav-item
-                      a.nav-link(href='#top')
-                        | Trang chủ 
-                        span.sr-only (current)
-                    li.nav-item
-                      a.nav-link(href='#tm-section-4') Đầu tư
-                    li.nav-item
-                      a.nav-link(href='#tm-section-5') Bài viết
-                    li.nav-item
-                      a.nav-link(href='#tm-section-6') Liên hệ
-                    li.nav-item
-                      a.nav-link(href='#') Đăng nhập
-
-
-
-block formDangKy
-  .tm-bg-white.ie-container-width-fix-2
-            .container.ie-h-align-center-fix
-              .row
-                .col-xs-12.ml-auto.mr-auto.ie-container-width-fix
-                  form.tm-search-form.tm-section-pad-2(action='index.html' method='get')
-                    h2 Đăng ký
-                    .form-row.tm-search-form-row
-                      label(for='exampleInputEmail1') Email:
-                      input#exampleInputEmail1.form-control(name type='email' aria-describedby='emailHelp')
-                      small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
-                    .form-row.tm-search-form-row
-                      label(for='exampleInputPassword1') Mật khẩu:
-                      input#exampleInputPassword1.form-control(type='password')
-                    .form-row.tm-search-form-row
-                      label(for='exampleInputName1') Họ tên:
-                      input#exampleInputName1.form-control(type='text')
-                    .form-row.tm-search-form-row
-                      label(for='exampleInputPhone1') Số điện thoại:
-                      input#exampleInputPhone1.form-conrol(Placeholder="Điền số điện thoại" type='tel')
-                    .form-row.tm-search-form-row
-                      label(for='exampleInputDOB1') Ngày sinh:
-                      //- // Date input
-                      input#exampleInputDOB1.form-control(type='date' name='DOB')
-                    .form-row.tm-search-form-row
-                      .form-check.form-check-inline
-                        input#inlineRadio1.form-check-input(type='radio' name='inlineRadioOptions' value='Male')
-                        label.form-check-label(for='inlineRadio1') Nam
-                      .form-check.form-check-inline
-                        input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='Female')
-                        label.form-check-label(for='inlineRadio2') Nữ
-
-                    button.btn.btn-primary(type='submit') Submit
-
-  
+extends ./login
+body 
+  a#a_btn.btn(href='/')
+    i.fas.fa-home
+  block form
+        
+        form(method='post')
+          img(src='img/ms-icon-150x150.png')
+          .input-div.one
+            .i
+              i.fas.fa-address-card
+            .div
+              h5 Fullname
+              input.input(type='text' required='' name='name')
+          .input-div.pass
+            .i
+              i.fas.fa-user
+            .div
+              h5 Username
+              input.input(type='text' required='' name='username')
+          .input-div.pass
+            .i
+              i.fas.fa-lock
+            .div
+              h5 Password
+              input.input(type='password' required='' name='password')
+          .input-div.pass
+            .i
+              i.fas.fa-envelope-square
+            .div
+              h5 Email
+              input.input(type='email' required='' name='email')
+          .input-div.pass
+            .i
+              i.fas.fa-phone
+            .div
+              h5 Số điện thoại
+              input.input(type='tel' required='' name='phone')
+          .input-div.pass
+            .i
+              i.fas.fa-calendar
+            .div
+              input#dob.input(type='date' required='')
+          .input-div.pass
+            .i
+              i.fa.fa-intersex.fa-2x.tm-form-element-icon
+            .div.select
+                select#mySelect.form-control(name='gender' required='')
+                  option(value='Male') Nam
+                  option(value='Female') Nữ  
+          a#a_btn.btn(href='/login'  ) Đăng nhập
+          input.btn(type='submit' value='Đăng ký')
+          a#a_btn.btn(href='/')
+              i.fas.fa-home  
+    script(type='text/javascript' src='js/main.js')
+        

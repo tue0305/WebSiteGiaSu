@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title TutorViking
+    link(rel='stylesheet' type='text/css' href='css/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:600&display=swap' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/a81368914c.js')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+  body
+    img.wave(src='img/wave.png')
+    .container
+      .img
+        img.logo(src='img/bg.svg' )
+       
+      .login-content
+        block form
+          form( action='login' method='post')
+            img(src='img/ms-icon-150x150.png')  
+            .input-div.one
+              .i
+                i.fas.fa-user
+              .div
+                h5 Username
+                input.input(type='text' required='' name='username')
+            .input-div.pass
+              .i
+                i.fas.fa-lock
+              .div
+                h5 Password
+                input.input(type='password' required='' name='password')
+            a(href='#') Forgot Password? 
+            input.btn(type='submit' value='Đăng nhập') 
+            a#a_btn.btn(href='/registration')     Đăng ký
+            a#a_btn.btn(href='/')
+              i.fas.fa-home
+    script(type='text/javascript' src='js/main.js')

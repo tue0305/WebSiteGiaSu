@@ -1,24 +1,27 @@
 doctype html
 html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    title WebSite Gia Sư
-   
-    //- // load stylesheets
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
-    //- // Google web font "Open Sans"
-    link(rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.min.css')
-    //- // Font Awesome
-    link(rel='stylesheet' href='css/bootstrap.min.css')
-    //- // Bootstrap style
-    link(rel='stylesheet' type='text/css' href='slick/slick.css')
-    link(rel='stylesheet' type='text/css' href='slick/slick-theme.css')
-    link(rel='stylesheet' type='text/css' href='css/datepicker.css')
-    link(rel='stylesheet' href='css/tooplate-style.css')
-
-
+  head 
+    block head  
+      //- title TutorViking
+      //-   Template 2095 Level
+      //-   http://www.tooplate.com/view/2095-level
+      //- // load stylesheets
+      link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+      //- // Google web font "Open Sans"
+      link(rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.min.css')
+      //- // Font Awesome
+      link(rel='stylesheet' href='css/bootstrap.min.css')
+      //- // Bootstrap style
+      link(rel='stylesheet' type='text/css' href='slick/slick.css')
+      link(rel='stylesheet' type='text/css' href='slick/slick-theme.css')
+      link(rel='stylesheet' type='text/css' href='css/datepicker.css')
+      link(rel='stylesheet' href='css/tooplate-style.css')
+      //- // Templatemo style
+      //- // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+      //- // WARNING: Respond.js doesn't work if you view the page via file://
+      //- //if lt IE 9
+      //-   script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      //-   script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
     #top.tm-main-content
       .tm-top-bar-bg
@@ -29,14 +32,11 @@ html(lang='en')
             .row
               nav.navbar.navbar-expand-lg.narbar-light
                 a.navbar-brand.mr-auto(href='#')
-                
                   img(src='img/logo.png' alt='Site logo')
-                  |                                Web Gia sư
+                  |                                 Level
                 button#nav-toggle.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#mainNav' aria-expanded='false' aria-label='Toggle navigation')
                   span.navbar-toggler-icon
-              
                 #mainNav.collapse.navbar-collapse.tm-bg-white
-                
                   ul.navbar-nav.ml-auto
                     li.nav-item
                       a.nav-link(href='#top')
@@ -49,7 +49,7 @@ html(lang='en')
                     li.nav-item
                       a.nav-link(href='#tm-section-6') Contact Us
       #tm-section-1.tm-section.tm-bg-img
-        block formDangKy
+        block form
           .tm-bg-white.ie-container-width-fix-2
             .container.ie-h-align-center-fix
               .row
@@ -118,99 +118,84 @@ html(lang='en')
         .container
           .row
             .col.text-center
-              h2.tm-section-title Chúng tôi luôn đồng hành cùng các bạn!
-              p.tm-color-white.tm-section-subtitle Đăng ký để nhận các tin tức mới nhất của chúng tôi!
+              h2.tm-section-title We are here to help you?
+              p.tm-color-white.tm-section-subtitle Subscribe to get our newsletters
               a.tm-color-white.tm-btn-white-bordered(href='#') Subscribe Newletters
       .tm-section.tm-position-relative
         svg.tm-section-down-arrow(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none')
-          polygon(fill='#ee5057' points='0,0  100,0  50,60')
+          polygon(fill='#ffab00' points='0,0  100,0  50,60')
         .container.tm-pt-5.tm-pb-4
           .row.text-center
             article.col-sm-12.col-md-4.col-lg-4.col-xl-4.tm-article
               i.fa.tm-fa-6x.fa-legal.tm-color-primary.tm-margin-b-20
-              h3.tm-color-primary.tm-article-title-1 Gia sư chất lượng cao! chi phí phải chăng
+              h3.tm-color-primary.tm-article-title-1 Pellentesque accumsan arcu nec dolor tempus
               p
-                |                              Đội ngũ gia sư chất lượng cao đến từ các trường đại học hàng đầu được tuyển chọn kỹ lưỡng và đào tạo nghiệp vụ kỹ năng.
-
+                | Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida. Donec at felis libero. Mauris odio tortor.
               a.text-uppercase.tm-color-primary.tm-font-semibold(href='#') Continue reading...
             article.col-sm-12.col-md-4.col-lg-4.col-xl-4.tm-article
               i.fa.tm-fa-6x.fa-plane.tm-color-primary.tm-margin-b-20
-              h3.tm-color-primary.tm-article-title-1 Gia sư đến từ các nước trên thế giới
+              h3.tm-color-primary.tm-article-title-1 Duis scelerisque metus vel felis porttitor
               p
-                | Với sự trợ giúp của tất cả các gia sư trên toàn thế giới góp phần nâng cao chất lượng đào tạo mang lại nhiều thành quả cho nghành giáo dục.
+                | Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida. Donec at felis libero. Mauris odio tortor.
               a.text-uppercase.tm-color-primary.tm-font-semibold(href='#') Continue reading...
             article.col-sm-12.col-md-4.col-lg-4.col-xl-4.tm-article
               i.fa.tm-fa-6x.fa-life-saver.tm-color-primary.tm-margin-b-20
-              h3.tm-color-primary.tm-article-title-1 Hệ thống bài kiểm tra đánh giá
+              h3.tm-color-primary.tm-article-title-1 Etiam aliquam arcu at mauris consectetur
               p
-                |Cứ sau 10 buổi học, học viên sẽ thực hiện một bài kiểm tra để đánh giá sự tiến bộ. Kết quả bài kiểm tra sẽ giúp điều chỉnh lộ trình nếu cần thiết.
+                | Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida. Donec at felis libero. Mauris odio tortor.
               a.text-uppercase.tm-color-primary.tm-font-semibold(href='#') Continue reading...
       #tm-section-4.tm-section.tm-section-pad.tm-bg-gray
         .container
           .row
             .col-sm-12.col-md-12.col-lg-8.col-xl-8
               .tm-article-carousel
-                article.tm-bg-white.mr-2.tm-carousel-item 
-                  img.img-fluid(src='img/pic1.jpg' alt='Image')
+                article.tm-bg-white.mr-2.tm-carousel-item
+                  img.img-fluid(src='img/img-01.jpg' alt='Image')
                   .tm-article-pad
                     header
-                      h3.text-uppercase.tm-article-title-2 Đặng Bích Ngọc
+                      h3.text-uppercase.tm-article-title-2 Nunc in felis aliquet metus luctus iaculis
                     p
-                      | Môn Dạy : Toán, Tiếng Anh
-                      |Giới thiệu chung :  Sinh viên năm 2 đại học Kinh tế quốc dân, khoa quản trị kinh doanh.
-                      |   12 năm đạt học sinh giỏi. Điểm thi đại học: Toán:9.2, Anh:8.6, Lý: 8.25, Hóa: 8.5, Văn:6.5
-                      |   Trung thực, thật thà, hết lòng với học sinh
+                      | Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.
                     a.text-uppercase.btn-primary.tm-btn-primary(href='#') Get More Info.
                 article.tm-bg-white.mr-2.tm-carousel-item
-                  img.img-fluid(src='img/pic2.jpg' alt='Image')
+                  img.img-fluid(src='img/img-02.jpg' alt='Image')
                   .tm-article-pad
                     header
-                      h3.text-uppercase.tm-article-title-2 Trương Hoàng Hải
+                      h3.text-uppercase.tm-article-title-2 Sed cursus dictum nunc quis molestie
                     p
-                      | Môn Dạy : Lý , Kỹ Năng Mềm 
-                      |Bằng Thạc sỹ chuyên ngành Quản lý Giao thông, Trường Quốc gia cầu đường Paris.
-                      |tôi tích lũy được nhiều kinh nghiệm liên quan đến làm việc nhóm, Giái quyết vấn đề và ra quyết định, quản lý thời gian, tổ chức công việc, đàm phán
-                      
+                      | Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.
                     a.text-uppercase.btn-primary.tm-btn-primary(href='#') View Detail
                 article.tm-bg-white.mr-2.tm-carousel-item
-                  img.img-fluid(src='img/pic3.jpg' alt='Image')
+                  img.img-fluid(src='img/img-01.jpg' alt='Image')
                   .tm-article-pad
                     header
-                      h3.text-uppercase.tm-article-title-2 Đỗ Mạnh Hiếu
-
+                      h3.text-uppercase.tm-article-title-2 Eget diam pellentesque interdum ut porta
                     p
-                      | Môn Dạy: Toán, Lý
-                      | Có khả năng thể thao và nghệ thuật. Đã từng thuyết trình tại hội trường lớn trước 1000 khán giả
-                      |Là người chăm chỉ, cẩn thận, trách nhiệm, hi vọng sẽ nhận được sự ủng hộ của Blacasa và các quý phụ huynh.
+                      | Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed sapien venenatis consequat. Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla.
                     a.text-uppercase.btn-primary.tm-btn-primary(href='#') More Info.
                 article.tm-bg-white.mr-2.tm-carousel-item
-                  img.img-fluid(src='img/pic4.jpg' alt='Image')
+                  img.img-fluid(src='img/img-02.jpg' alt='Image')
                   .tm-article-pad
                     header
-                      h3.text-uppercase.tm-article-title-2 Trần Ánh Dương
+                      h3.text-uppercase.tm-article-title-2 Lorem ipsum dolor sit amet, consectetur
                     p
-                      | Đang là sinh viên năm 2, khoa Công nghệ Y Sinh 
-                      |Đạt học bổng đầu vào trường Đại học Việt Pháp, trình độ tiếng anh B2
-                      | Đang là trợ giảng tại Cleverlearn Vietnam
+                      | Suspendisse molestie sed dui eget faucibus. Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.
                     a.text-uppercase.btn-primary.tm-btn-primary(href='#') Detail Info.
                 article.tm-bg-white.mr-2.tm-carousel-item
-                  img.img-fluid(src='img/pic5.jpg' alt='Image')
+                  img.img-fluid(src='img/img-01.jpg' alt='Image')
                   .tm-article-pad
                     header
-                      h3.text-uppercase.tm-article-title-2 Nguyễn Thị Mai Linh
+                      h3.text-uppercase.tm-article-title-2 Orci varius natoque penatibus et
                     p
-                      | môn dạy:Toán, Văn, Tiếng Việt
-                      |SV trường DDH sư phạm HN. Hòa đồng, năng động, kinh nghiệm gia sư trợ giảng 2 năm khối tiểu học, thcs
-                    a.text-uppercase.btn-primary.tm-btn-primary(href='#') More Details
+                      | Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.
+                    a.text-uppercase.btn-primary.tm-btn-primary(href='#') Read More
                 article.tm-bg-white.tm-carousel-item
-                  img.img-fluid(src='img/pic6.jpg' alt='Image')
+                  img.img-fluid(src='img/img-02.jpg' alt='Image')
                   .tm-article-pad
                     header
-                      h3.text-uppercase.tm-article-title-2 Lê Văn Nam
+                      h3.text-uppercase.tm-article-title-2 Nullam sollicitudin at augue venenatis eleifend
                     p
-                      | môn dạy: Toán, Hóa
-                      |Tốt nghiệp bằng khá Học Viện Bưu chính viễn thông
-                      |Tôi muốn đồng hành cùng các bạn trẻ chinh phục các điểm số trong môn Toán và Hoá
+                      | Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed sapien venenatis consequat. Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla.
                     a.text-uppercase.btn-primary.tm-btn-primary(href='#') More Details
             .col-sm-12.col-md-12.col-lg-4.col-xl-4.tm-recommended-container
               .tm-bg-white
@@ -246,37 +231,32 @@ html(lang='en')
           .container.ie-h-align-center-fix
             .row.tm-flex-align-center
               .col-xs-12.col-md-12.col-lg-3.col-xl-3.tm-media-title-container
-                h2.text-uppercase.tm-section-title-2 Dịch Vụ
-                h3.tm-color-primary.tm-font-semibold.tm-section-subtitle-2 Đào Tạo
+                h2.text-uppercase.tm-section-title-2 ASIA
+                h3.tm-color-primary.tm-font-semibold.tm-section-subtitle-2 Singapore
               .col-xs-12.col-md-12.col-lg-9.col-xl-9.mt-0.mt-sm-3
                 .ml-auto.tm-bg-white-shadow.tm-pad.tm-media-container
                   article.media.tm-margin-b-20.tm-media-1
-                    img(src='img/img-03.png' alt='Image')
+                    img(src='img/img-03.jpg' alt='Image')
                     .media-body.tm-media-body-1.tm-media-body-v-center
-                      h3.tm-font-semibold.tm-color-primary.tm-article-title-3 Gia Sư Chất Lượng Cao
+                      h3.tm-font-semibold.tm-color-primary.tm-article-title-3 Suspendisse vel est libero sem phasellus ac laoreet
                       p
-                        | Tiếp nối khát vọng nâng cao chất lượng giáo dục Việt Nam, sau nền tảng gia sư công nghệ 4.0, đội ngũ Blacasa Việt Nam tiếp tục dành nhiều tâm huyết để nghiên cứu và cho ra đời Chương trình BMentor - Trợ lý học tập.
-
-                        |Chương trình BMentor nhằm hỗ trợ phụ huynh cởi bỏ những lo toan về vấn đề học tập và định hướng tương lai cho con em mình.
+                        | Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. 
                         br
                         br
-                        | BMentor bao gồm 3 yếu tố cốt lõi:
-
-                      |1. Đội ngũ gia sư dạy kèm chất lượng cao được đào tạo bài bản;
-                      |2. Ban tư vấn gồm các chuyên gia và giáo viên giàu kinh nghiệm giúp tư vấn lộ trình học tập;
-                      |3. Ứng dụng công nghệ nhằm liên kết giữa Blacasa, Gia sư, Ban cố vấn, Phụ huynh và Học viên.
+                        | 											Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.
                   article.media.tm-margin-b-20.tm-media-1
-                    img(src='img/img-04.png' alt='Image')
+                    img(src='img/img-04.jpg' alt='Image')
                     .media-body.tm-media-body-1.tm-media-body-v-center
-                      h3.tm-font-semibold.tm-article-title-3 BỒI DƯỠNG KIẾN THỨC
+                      h3.tm-font-semibold.tm-article-title-3 Suspendisse vel est libero sem phasellus ac laoreet
                       p
-                        | Mô hình nhóm học nhỏ là mô hình học tập được thiết kế dành cho những học viên có cùng năng lực và mục tiêu học tập. Hệ thống bài giảng được xây dựng tối ưu cho học viên, đồng thời tương tác giữa người dạy và người học được gia tăng tối đa nhằm mang lại hiệu quả học tập tốt nhất. Giáo viên đứng lớp là những người có nhiều kinh nghiệm dạy học và bồi dưỡng kiến thức. Quá trình học không chỉ nhằm bồi dưỡng kiến thức mà còn tập trung vào khơi dậy ham muốn học tập, kích thích học viên yêu thích môn học và nâng cao khả năng tự học. 
+                        | Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.
+                      a.text-uppercase.tm-color-primary.tm-font-semibold(href='#') Continue reading...
                   article.media.tm-margin-b-20.tm-media-1
-                    img(src='img/img-05.png' alt='Image')
+                    img(src='img/img-05.jpg' alt='Image')
                     .media-body.tm-media-body-1.tm-media-body-v-center
-                      h3.tm-font-semibold.tm-article-title-3 Giáo viên quản lý lớp học
+                      h3.tm-font-semibold.tm-article-title-3 Faucibus dolor ligula nisl metus auctor aliquet
                       p
-                        | Mỗi lớp học gia sư sẽ có một giáo viên giàu kinh nghiệm quản lý chuyên môn. Giáo viên sẽ thiết kế lộ trình học tập và theo dõi quá trình học.
+                        | Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl orci, laoreet ultricies massa tristique id.
                       a.text-uppercase.tm-color-primary.tm-font-semibold(href='#') Continue reading...
       #tm-section-6.tm-section.tm-section-pad.tm-bg-img.tm-position-relative
         .container.ie-h-align-center-fix
@@ -302,7 +282,7 @@ html(lang='en')
               | Copyright © 
               span.tm-current-year 2018
               |  Your Company
-              |                         - Design by : Cao Tấn & Minh Tuệ
+              |                         - Design: Tooplate
     //- // load JS files
     script(src='js/jquery-1.11.3.min.js')
     //- // jQuery (https://jquery.com/download/)
@@ -322,109 +302,110 @@ html(lang='en')
       var map = '';
       var center;
       function initialize() {
-      var mapOptions = {
-      zoom: 16,
-      center: new google.maps.LatLng(13.7567928,100.5653741),
-      scrollwheel: false
-      };
-      map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-      google.maps.event.addDomListener(map, 'idle', function() {
-      calculateCenter();
-      });
-      google.maps.event.addDomListener(window, 'resize', function() {
-      map.setCenter(center);
-      });
+        var mapOptions = {
+          zoom: 16,
+          center: new google.maps.LatLng(13.7567928,100.5653741),
+          scrollwheel: false
+        };
+        map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+        google.maps.event.addDomListener(map, 'idle', function() {
+          calculateCenter();
+        });
+        google.maps.event.addDomListener(window, 'resize', function() {
+          map.setCenter(center);
+        });
       }
       function calculateCenter() {
-      center = map.getCenter();
+        center = map.getCenter();
       }
       function loadGoogleMap(){
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
-      document.body.appendChild(script);
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+        document.body.appendChild(script);
       }
       function setCarousel() {
-      if ($('.tm-article-carousel').hasClass('slick-initialized')) {
-      $('.tm-article-carousel').slick('destroy');
-      }
-      if($(window).width() < 438){
-      // Slick carousel
-      $('.tm-article-carousel').slick({
-      infinite: false,
-      dots: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
-      });
-      }
-      else {
-      $('.tm-article-carousel').slick({
-      infinite: false,
-      dots: true,
-      slidesToShow: 2,
-      slidesToScroll: 1
-      });
-      }
+        if ($('.tm-article-carousel').hasClass('slick-initialized')) {
+          $('.tm-article-carousel').slick('destroy');
+        }
+        if($(window).width() < 438){
+        // Slick carousel
+          $('.tm-article-carousel').slick({
+            infinite: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        }
+        else {
+          $('.tm-article-carousel').slick({
+            infinite: false,
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          });
+        }
       }
       function setPageNav(){
-      if($(window).width() > 991) {
-      $('#tm-top-bar').singlePageNav({
-      currentClass:'active',
-      offset: 79
-      });
-      }
-      else {
-      $('#tm-top-bar').singlePageNav({
-      currentClass:'active',
-      offset: 65
-      });
-      }
+        if($(window).width() > 991) {
+          $('#tm-top-bar').singlePageNav({
+            currentClass:'active',
+            offset: 79
+          });
+        }
+        else {
+          $('#tm-top-bar').singlePageNav({
+            currentClass:'active',
+            offset: 65
+          });
+        }
       }
       function togglePlayPause() {
-      vid = $('.tmVideo').get(0);
-      if(vid.paused) {
-      vid.play();
-      $('.tm-btn-play').hide();
-      $('.tm-btn-pause').show();
-      }
-      else {
-      vid.pause();
-      $('.tm-btn-play').show();
-      $('.tm-btn-pause').hide();
-      }
+        vid = $('.tmVideo').get(0);
+        if(vid.paused) {
+          vid.play();
+          $('.tm-btn-play').hide();
+          $('.tm-btn-pause').show();
+        }
+        else {
+          vid.pause();
+          $('.tm-btn-play').show();
+          $('.tm-btn-pause').hide();
+        }
       }
       $(document).ready(function(){
-      $(window).on("scroll", function() {
-      if($(window).scrollTop() > 100) {
-      $(".tm-top-bar").addClass("active");
-      } else {
-      //remove the background property so it comes transparent again (defined in your css)
-      $(".tm-top-bar").removeClass("active");
-      }
-      });
+        $(window).on("scroll", function() {
+          if($(window).scrollTop() > 100) {
+            $(".tm-top-bar").addClass("active");
+          }
+          else {
+        //- //remove the background property so it comes transparent again (defined in your css)
+            $(".tm-top-bar").removeClass("active");
+          }
+        });
       // Google Map
-      loadGoogleMap();
+        loadGoogleMap();
       // Date Picker
-      const pickerCheckIn = datepicker('#inputCheckIn');
-      const pickerCheckOut = datepicker('#inputCheckOut');
+        const pickerCheckIn = datepicker('#inputCheckIn');
+        const pickerCheckOut = datepicker('#inputCheckOut');
       // Slick carousel
-      setCarousel();
-      setPageNav();
-      $(window).resize(function() {
-      setCarousel();
-      setPageNav();
+        setCarousel();
+        setPageNav();
+        $(window).resize(function() {
+          setCarousel();
+          setPageNav();
       });
       // Close navbar after clicked
-      $('.nav-link').click(function(){
-      $('#mainNav').removeClass('show');
-      });
+        $('.nav-link').click(function(){
+          $('#mainNav').removeClass('show');
+        });
       // Control video
-      $('.tm-btn-play').click(function() {
-      togglePlayPause();
-      });
-      $('.tm-btn-pause').click(function() {
-      togglePlayPause();
-      });
+        $('.tm-btn-play').click(function() {
+          togglePlayPause();
+        });
+        $('.tm-btn-pause').click(function() {
+          togglePlayPause();
+        });
       // Update the current year in copyright
-      $('.tm-current-year').text(new Date().getFullYear());
+        $('.tm-current-year').text(new Date().getFullYear());
       });

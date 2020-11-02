@@ -1,4 +1,22 @@
-extend ./layout
-
-block body
-
+extends layout
+doctype html
+html(lang='en')
+  body   
+        prepend menu
+        block form
+          .container.ie-h-align-center-fix
+            .row 
+              .col-xs-12.ml-auto.mr-auto.ie-container-width-fix
+                form.tm-search-form.tm-section-pad-2(action='index.html' method='get')
+                  .form-row.tm-search-form-row
+                    .form-group.tm-form-element.tm-form-element-50
+                      i.fa.fa-map-marker.fa-2x.tm-form-element-icon
+                      input#inputCity.form-control(name='city' type='text' placeholder='Type your destination...')
+                    .form-group.tm-form-element.tm-form-element-50
+                      i.fa.fa-calendar.fa-2x.tm-form-element-icon
+                      input#inputCheckIn.form-control(name='check-in' type='text' placeholder='Check In')
+                    .form-group.tm-form-element.tm-form-element-50
+                      i.fa.fa-calendar.fa-2x.tm-form-element-icon
+                      input#inputCheckOut.form-control(name='check-out' type='text' placeholder='Check Out')
+                    .form-group.tm-form-element.tm-form-element-50
+                      button.btn.btn-primary.tm-btn-search(type='submit') Tìm kiếm
