@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-11-05T17:38:52.738Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.61" etag="e2ui2IcH0Wy1NTtFUE7S" version="13.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-05T17:42:56.150Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.61" etag="IOS6-2aFjank0KVk0_wh" version="13.9.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="510" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="H8FlF2VFNgWhiIOVxE52-28" value="User" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="99" y="61" width="141" height="202" as="geometry" />
+          <mxGeometry x="100" y="61" width="141" height="270" as="geometry" />
         </mxCell>
         <mxCell id="H8FlF2VFNgWhiIOVxE52-29" value="+ Name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
           <mxGeometry y="26" width="141" height="26" as="geometry" />
@@ -19,11 +19,17 @@
         <mxCell id="H8FlF2VFNgWhiIOVxE52-33" value="+ Gender: Enum&#xa;[ &quot;MALE&quot;, &quot;FEMALE&quot;, &quot;&quot;]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
           <mxGeometry y="104" width="141" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="H8FlF2VFNgWhiIOVxE52-32" value="+ PhoneNumber: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-32" value="+ DayOfBirth: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
           <mxGeometry y="150" width="141" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="H8FlF2VFNgWhiIOVxE52-31" value="+ PhoneNumber: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-36" value="+ Username: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
           <mxGeometry y="176" width="141" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-37" value="+ Password: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
+          <mxGeometry y="202" width="141" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-31" value="+ Role: Enum[ &quot;STAFF&quot;, &#xa;&quot;ADMIN&quot;, &quot;CLIENT&quot;]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-28">
+          <mxGeometry y="228" width="141" height="42" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
