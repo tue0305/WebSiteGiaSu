@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-05T17:59:36.867Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.61" etag="cDpUHQIQPPvg5zo1zxyo" version="13.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-05T18:04:40.196Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.61" etag="TmGevFMYy_N9FfSFTOK9" version="13.9.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="510" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -43,26 +43,41 @@
         <mxCell id="H8FlF2VFNgWhiIOVxE52-41" value="+ Title: String&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
           <mxGeometry y="26" width="179" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="H8FlF2VFNgWhiIOVxE52-42" value="+ TimeTable: Object [Day]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
-          <mxGeometry y="52" width="179" height="28" as="geometry" />
-        </mxCell>
         <mxCell id="H8FlF2VFNgWhiIOVxE52-43" value="+ Description: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
-          <mxGeometry y="80" width="179" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="H8FlF2VFNgWhiIOVxE52-44" value="+ Location: Object [Location]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
-          <mxGeometry y="106" width="179" height="34" as="geometry" />
+          <mxGeometry y="52" width="179" height="26" as="geometry" />
         </mxCell>
         <mxCell id="H8FlF2VFNgWhiIOVxE52-45" value="+ TimeEachSession: Enum&#xa;[&quot;1&quot;, &quot;1.5&quot;, &quot;2&quot;, &quot;2.5&quot;, &quot;3&quot;]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
-          <mxGeometry y="140" width="179" height="48" as="geometry" />
+          <mxGeometry y="78" width="179" height="48" as="geometry" />
         </mxCell>
         <mxCell id="H8FlF2VFNgWhiIOVxE52-46" value="+ FeeEachSession: Currency" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
-          <mxGeometry y="188" width="179" height="26" as="geometry" />
+          <mxGeometry y="126" width="179" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-42" value="+ TimeTable: Object [TimeTable]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
+          <mxGeometry y="152" width="179" height="28" as="geometry" />
         </mxCell>
         <mxCell id="H8FlF2VFNgWhiIOVxE52-48" value="+ Status: Enum[ &quot;DONE&quot;, &#xa;&quot;IN_PROCESS&quot;, &quot;CANCEL&quot;]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
-          <mxGeometry y="214" width="179" height="42" as="geometry" />
+          <mxGeometry y="180" width="179" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-44" value="+ Location: Object [Location]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
+          <mxGeometry y="222" width="179" height="34" as="geometry" />
         </mxCell>
         <mxCell id="H8FlF2VFNgWhiIOVxE52-47" value="+ User: Object (User)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-40">
           <mxGeometry y="256" width="179" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-51" value="TimeTable" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="20" width="179" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-57" value="+ Day: Enum[ &quot;MONDAY&quot;, &#xa;&quot;TUESDAY&quot; , &quot;WEDNESDAY&quot;,&#xa; &quot;THURSDAY&quot;, &quot;FRIDAY&quot;,&#xa;&quot;SUNDAT&quot;]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-51">
+          <mxGeometry y="26" width="179" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-58" value="+ isMorning: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-51">
+          <mxGeometry y="100" width="179" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-60" value="+ isAfternoon: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-51">
+          <mxGeometry y="134" width="179" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="H8FlF2VFNgWhiIOVxE52-61" value="+ isNight: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H8FlF2VFNgWhiIOVxE52-51">
+          <mxGeometry y="168" width="179" height="34" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
