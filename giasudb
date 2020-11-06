@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-06T07:03:24.086Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.61" etag="c5lgydl7JF8hAGDJJggw" version="13.9.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-11-06T07:03:46.358Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36 Edg/86.0.622.61" etag="a5m6fXkNR3A02-N9swSG" version="13.9.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="ClassDiagram_qlgiasu">
     <mxGraphModel dx="1504" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -369,8 +369,8 @@
         <mxCell id="PblRy9o0ntyM5VGwa0iL-4" value="+ LuuThongTin(): Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PblRy9o0ntyM5VGwa0iL-0">
           <mxGeometry y="268" width="220" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="PblRy9o0ntyM5VGwa0iL-5" value="Quản lý đăng nhập&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="FmJPBy_VVVvPTUVm_oI9-1">
-          <mxGeometry x="330" y="90" width="190" height="86" as="geometry" />
+        <mxCell id="PblRy9o0ntyM5VGwa0iL-5" value="Quản lý đăng tin&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="FmJPBy_VVVvPTUVm_oI9-1">
+          <mxGeometry x="400" y="180" width="190" height="86" as="geometry" />
         </mxCell>
         <mxCell id="PblRy9o0ntyM5VGwa0iL-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="PblRy9o0ntyM5VGwa0iL-5">
           <mxGeometry y="26" width="190" height="8" as="geometry" />
@@ -381,7 +381,7 @@
         <mxCell id="mo1ykT55jDzsxATpBIuI-15" value="+ LuuThongTin(): Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PblRy9o0ntyM5VGwa0iL-5">
           <mxGeometry y="60" width="190" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="PblRy9o0ntyM5VGwa0iL-8" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="FmJPBy_VVVvPTUVm_oI9-1" source="PblRy9o0ntyM5VGwa0iL-2" target="PblRy9o0ntyM5VGwa0iL-7">
+        <mxCell id="PblRy9o0ntyM5VGwa0iL-8" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FmJPBy_VVVvPTUVm_oI9-1" source="PblRy9o0ntyM5VGwa0iL-2" target="mo1ykT55jDzsxATpBIuI-15">
           <mxGeometry x="-0.0663" y="1" width="160" relative="1" as="geometry">
             <mxPoint x="220" y="115" as="sourcePoint" />
             <mxPoint x="370" y="140" as="targetPoint" />
@@ -396,7 +396,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PblRy9o0ntyM5VGwa0iL-10" value="Nhân viên" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="FmJPBy_VVVvPTUVm_oI9-1">
-          <mxGeometry x="620" y="64" width="160" height="92" as="geometry" />
+          <mxGeometry x="670" y="150" width="160" height="92" as="geometry" />
         </mxCell>
         <mxCell id="PblRy9o0ntyM5VGwa0iL-11" value="+ MaNV: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PblRy9o0ntyM5VGwa0iL-10">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
