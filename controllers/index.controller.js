@@ -2,8 +2,11 @@ const express = require("express");
 const body = require("body-parser");
 const mongoose = require("mongoose");
 var User = require("../models/user.model");
+var Subject = require("../models/subject.model");
 var dateFormat = require("date-format");
+const fetch = require("node-fetch");
 var bcrypt = require("bcryptjs")
+const flash = require("flash")
 //trang chủ
 module.exports.Index = function (req, res, next) {
   res.render("index");
@@ -18,22 +21,26 @@ module.exports.getLogin = function (req, res, next) {
 module.exports.postLogin = function (req, res, next) {
   
   var p = User.findOne({ "Username": req.body.username }, function (err, obj) {
-    if (err) {
-      next(err)
+    if (obj) {
+      if (err ) {
+        next(err)
+      }
+      else {
+        bcrypt.compare(req.body.password, obj.Password, function (err, response) {
+          if (err) {
+            res.send(err.message)
+          }
+          if (response) {
+            res.render("index")
+          } else {
+            // response is OutgoingMessage object that server response http request
+            res.render("login", { message: 'Mật khẩu không chính xác!!!' });
+          }
+        });
+      }
     }
-    else {
-      bcrypt.compare(req.body.password, obj.Password, function (err, response) {
-        if (err) {
-          res.send(err.message)
-        }
-        if (response) {
-          res.render("index")
-        } else {
-          // response is OutgoingMessage object that server response http request
-          res.json({ success: false, message: "Sai mật khẩu"});
-        }
-      });
-    }
+    else 
+      res.render("login", { message: 'Tài khoản không tồn tại!!' });
   });
 };
 //trang đăng ký
@@ -67,3 +74,30 @@ module.exports.postRegistration = function (req, res, next) {
     }
   });
 };
+
+// trang tạo lớp
+module.exports.getCreateClass = function (req, res, next) {
+  Subject.find().then(function (subjects) {
+    const getProvinceList = async function (){
+      const response = await fetch('https://thongtindoanhnghiep.co/api/city');
+      const myJson = await response.json(); //extract JSON from the http response
+      // do something with myJson
+      return myJson
+    }
+    
+    getProvinceList().then(function (rs) {
+      return rs.LtsItem
+     
+    }).then(function (rs) {
+      res.render("class-create", {subjects:subjects, provinces:rs});
+    })
+    
+    
+    
+  })
+ 
+}
+
+module.exports.postCreateClass = function (req, res, next) {
+  
+}

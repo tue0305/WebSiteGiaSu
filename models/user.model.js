@@ -4,7 +4,8 @@ const uniqueValidator  =  require('mongoose-unique-validator');
 const bcrypt = require('bcryptjs')
 const { Schema } = mongoose;
 var dateFormat = require('date-format');
-const GENDER = ["Male", "Female"];
+//enum
+const GENDER = ["MALE", "FEMALE"];
 const ROLE = ["ADMIN", "STAFF", "CLIENT"];
 const userSchema = new Schema({
   Name: String, // String is shorthand for {type: String}
@@ -51,7 +52,10 @@ const userSchema = new Schema({
   }],
 
   //trạng thái hoạt động
-  Active: Boolean,
+  Active: {
+    type: Boolean,
+    default: true
+  },
 });
 
 // mã hóa trước khi lưu mật khẩu

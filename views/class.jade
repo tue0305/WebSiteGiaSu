@@ -1,0 +1,60 @@
+extends layout
+doctype html
+html
+  head 
+    block css
+       link(rel='stylesheet' href='css/class-style.css')
+  body 
+    block container 
+      .tm-section.tm-position-relative
+          
+          .container.tm-pt-5.tm-pb-4
+            .row.text-center.list-group
+              each p in classes 
+                .list-group-item.row-request.bla-common-shadow
+                  .one-row-class
+                    .bla-ribbon.ribbon-top-left
+                      span.ribbon-vip-class(title='Trả phí sau') Trả phí sau
+                    .row
+                      .col-md-2.col-sm-2
+                        .row-request-1
+                          p.image(style='height:50px;')
+                            img(typeof='foaf:Image' src='img/ms-icon-70x70.png' width='50' height='50' alt='avatar')
+                          p.creator-name
+                            a(href='#') #{p.Name}
+                          p.created-date #{p.dayCreated}
+                      .col-md-6.col-sm-6
+                        .row-request-2
+                          h2.row-request-title
+                            i.fa.fa-check(aria-hidden='true' style='font-size: 18px;color: #03ad03;margin-right: 2px;' title='Đã xác thực thông tin')
+                            a(href='/class/lop-tro-ly-hoc-tap-bmentor-tieng-anh-lop-2-tai-ngo-thi-nham-ha-dong-6793' target='_blank') #{p.Title}
+                          p(style='font-style: italic;')
+                            | #{p.Description}
+                          span.group-span 
+                          | #{p.Subject.Name}
+                          span.group-span 
+                          | #{p.Location.provinceName}
+                          span.showMap(title='Khoảng cách từ bạn tới lớp này, bấm để xem.')
+                      .col-md-2.col-sm-2
+                        .row-request-3
+                          span.green-text(style='color:#FF961E;')
+                            span(style='font-size: 18px;font-weight:bold;color:#FF961E;')
+                              - var feeEachMonth = p.feeEachSession * 30
+                              | #{feeEachMonth}
+                            |  vnđ/tháng
+                          p.class-offer-number 0/6 đề nghị
+                      .col-md-2.col-sm-2
+                        .row-request-4
+                          p.connect-fee.connect-fee-price(style='color:#069D86;')
+                            span(style='color: #4e4d4b;') Phí: 
+                            | dsad
+                            span(style='font-weight:normal!important;font-size:14px;')  vnđ
+                          span.connect-fee-note
+                            | (Chỉ thu khi nhận lớp 
+                            a(href='/chinh-sach-phi' target='_blank')
+                              i.fa.fa-exclamation-circle.fa-first
+                            | )
+                          .action-group.text-right.show-when-hover
+                            a.btn-yellow.btn.ctools-use-modal.ctools-use-modal-processed(href='/lop-hoc-user/6793/dang-ky-day') Đề Nghị Dạy
+
+              

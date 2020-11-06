@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const flash = require('flash')
 
 // admin handler
 const AdminBro = require('admin-bro')
@@ -19,7 +20,6 @@ AdminBro.registerAdapter(AdminBroMongoose)
 
 const app = express()
 
-require('./models/schedule.model')
 require('./models/subject.model')
 require('./models/class.model')
 const User = require('./models/user.model')

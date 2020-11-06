@@ -11,7 +11,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
 const controller = require("../controllers/class.controller");
 
-router.get("/", controller.getClassList);
+router.get("", controller.getClassList);
 
 module.exports = router;
 
