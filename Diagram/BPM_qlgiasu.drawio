@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-07T11:00:28.257Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="2YsFhz8ypxplQ5DKUYV7" version="13.9.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2020-11-07T11:00:58.945Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="3JD1h1DGeYkqZp0CqnHG" version="13.9.2" type="github" pages="7">
   <diagram name="BPM_TraCuuLop" id="2a216829-ef6e-dabb-86c1-c78162f3ba2b">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
       <root>
@@ -709,7 +709,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="EV7_ykwmyZN2KbX9kQL0" name="Page-7">
+  <diagram id="EV7_ykwmyZN2KbX9kQL0" name="BPM_DangKyNhanLop">
     <mxGraphModel dx="2128" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="20W1ENVnA0PNYl0Je0gG-0" />
@@ -839,6 +839,9 @@
         </mxCell>
         <mxCell id="20W1ENVnA0PNYl0Je0gG-21" value="Phân loại và xử lý các thông tin tùy theo quy đinh.&lt;br&gt;Những trường hợp đáp ứng quy tắc khiếu nại cam kết ban đầu nhân viên sẽ đưa ra hướng giải quyết tùy theo từng trường hợp. Ngược lại sẽ không giải quyết và giải thích lý do cho khách hàng." style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fontStyle=1" vertex="1" parent="20W1ENVnA0PNYl0Je0gG-17">
           <mxGeometry x="370" y="40" width="120" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="20W1ENVnA0PNYl0Je0gG-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="20W1ENVnA0PNYl0Je0gG-17" source="20W1ENVnA0PNYl0Je0gG-65" target="20W1ENVnA0PNYl0Je0gG-69">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="20W1ENVnA0PNYl0Je0gG-65" value="Cập nhập trang thái lớp, tắt&lt;br&gt;&amp;nbsp;chức năng nhận tin ứng tuyển" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="20W1ENVnA0PNYl0Je0gG-17">
           <mxGeometry x="30" y="45" width="170" height="55" as="geometry" />
