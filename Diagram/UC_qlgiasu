@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-07T17:18:50.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="X8szPAiuSN6SWoHxkbqZ" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-07T17:37:33.127Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="kAcELDWcVfPYFSVYyly4" version="13.9.2" type="github">
   <diagram id="XG1kMesaxJT4yGYvZvyy" name="UseCase">
     <mxGraphModel dx="1278" dy="1680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,7 +7,10 @@
         <mxCell id="IVBMbyfQL-mq07jWZYno-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="90" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IVBMbyfQL-mq07jWZYno-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="IVBMbyfQL-mq07jWZYno-2" target="IVBMbyfQL-mq07jWZYno-10">
+        <mxCell id="IVBMbyfQL-mq07jWZYno-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="IVBMbyfQL-mq07jWZYno-2" target="IVBMbyfQL-mq07jWZYno-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IVBMbyfQL-mq07jWZYno-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="IVBMbyfQL-mq07jWZYno-2" target="IVBMbyfQL-mq07jWZYno-42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IVBMbyfQL-mq07jWZYno-2" value="Staff" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
@@ -58,7 +61,7 @@
           <mxGeometry x="180" y="500" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="IVBMbyfQL-mq07jWZYno-10" value="Hỗ trợ khách hàng&lt;br&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="1">
-          <mxGeometry x="150" y="340" width="140" height="40" as="geometry" />
+          <mxGeometry x="180" y="380" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="IVBMbyfQL-mq07jWZYno-11" value="Đăng ký nhận lớp" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="1">
           <mxGeometry x="300" y="160" width="140" height="40" as="geometry" />
@@ -159,9 +162,20 @@
             <mxPoint x="673.54" y="210.00000000000006" as="targetPoint" />
             <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="674" y="360" />
+              <mxPoint x="674" y="390" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="IVBMbyfQL-mq07jWZYno-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IVBMbyfQL-mq07jWZYno-42" target="IVBMbyfQL-mq07jWZYno-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="375" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IVBMbyfQL-mq07jWZYno-42" value="Quản lý tài khoản&lt;br&gt;&amp;nbsp;khách hàng" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="320" width="140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
