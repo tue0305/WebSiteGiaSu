@@ -25,7 +25,7 @@ html
 
         form#contact_form(action='#' method='post')
           .subject
-              input#title_input(type='text' placeholder='TIÊU ĐỀ (mô tả ngắn gọn) ' name='title' required='')
+              inputtitle_input(type='text' placeholder='TIÊU ĐỀ (mô tả ngắn gọn) ' name='title' required='')
           .name
             select#subject_input(placeholder='Môn học' name='subject' required='')
               option(disabled='' hidden='' selected='') MÔN HỌC
@@ -33,102 +33,102 @@ html
                 option #{s.Name}
           
           .subject
-            input#telephone_input(type='text' placeholder='My number is' name='telephone' required='')
+            inputtelephone_input(type='text' placeholder='My number is' name='telephone' required='')
           .name
             select#subject_input(placeholder='Subject line' name='province' required='')
               option(disabled='' hidden='' selected='') TỈNH THÀNH
               each p in provinces
                 option #{p.Title}
           .message
-            label(for='description')
+            label.subject-tag(for='description')
             textarea#description_input(style="background-color:white; opacity:0.8" name='description' placeholder="MÔ TẢ CHI TIẾT" cols='30' rows='5' )
             .message
-            label(for='timetable') Thời khóa biểu
+            label.subject-tag(for='timetable') Thời khóa biểu
             .calendar-list-picker
               .row-calendar-check
                 h5 Thứ 2
                 ul
                   li
-                    label#lb_Timetable( for='morning-session') SÁNG
-                    input(type='checkbox', name='morning')
+                    label.subject-tag( for='morning-session' ) SÁNG
+                    input#day-checkbox(type='checkbox', name='morning')
                   li
-                    label#lb_Timetable( for='afternoon-session') CHIỀU
-                    input(type='checkbox', name='afternoon')
+                    label.subject-tag( for='afternoon-session' ) CHIỀU
+                    input#day-checkbox(type='checkbox', name='afternoon')
                   li
-                    label#lb_Timetable( for='night-session') TỐI
-                    input(type='checkbox', name='night')
+                    label.subject-tag( for='night-session' ) TỐI
+                    input#day-checkbox(type='checkbox', name='night')
               .row-calendar-check
                 h5 Thứ 3
                 ul
                   li
-                    label#lb_Timetable( for='morning-session') SÁNG
-                    input(type='checkbox', name='morning')
+                    label.subject-tag( for='morning-session' ) SÁNG
+                    input#day-checkbox(type='checkbox', name='morning')
                   li
-                    label#lb_Timetable( for='afternoon-session') CHIỀU
-                    input(type='checkbox', name='afternoon')
+                    label.subject-tag( for='afternoon-session' ) CHIỀU
+                    input#day-checkbox(type='checkbox', name='afternoon')
                   li
-                    label#lb_Timetable( for='night-session') TỐI
-                    input(type='checkbox', name='night')
+                    label.subject-tag( for='night-session' ) TỐI
+                    input#day-checkbox(type='checkbox', name='night')
               .row-calendar-check
                 h5 Thứ 4
                 ul
                   li
-                    label#lb_Timetable( for='morning-session') SÁNG
-                    input(type='checkbox', name='morning')
+                    label.subject-tag( for='morning-session' ) SÁNG
+                    input#day-checkbox(type='checkbox', name='morning')
                   li
-                    label#lb_Timetable( for='afternoon-session') CHIỀU
-                    input(type='checkbox', name='afternoon')
+                    label.subject-tag( for='afternoon-session' ) CHIỀU
+                    input#day-checkbox(type='checkbox', name='afternoon')
                   li
-                    label#lb_Timetable( for='night-session') TỐI
-                    input(type='checkbox', name='night')
+                    label.subject-tag( for='night-session' ) TỐI
+                    input#day-checkbox(type='checkbox', name='night')
               .row-calendar-check
                 h5 Thứ 5
                 ul
                   li
-                    label#lb_Timetable( for='morning-session') SÁNG
-                    input(type='checkbox', name='morning')
+                    label.subject-tag( for='morning-session' ) SÁNG
+                    input#day-checkbox(type='checkbox', name='morning')
                   li
-                    label#lb_Timetable( for='afternoon-session') CHIỀU
-                    input(type='checkbox', name='afternoon')
+                    label.subject-tag( for='afternoon-session' ) CHIỀU
+                    input#day-checkbox(type='checkbox', name='afternoon')
                   li
-                    label#lb_Timetable( for='night-session') TỐI
-                    input(type='checkbox', name='night')
+                    label.subject-tag( for='night-session' ) TỐI
+                    input#day-checkbox(type='checkbox', name='night')
               .row-calendar-check
                 h5 Thứ 6
                 ul
                   li
-                    label#lb_Timetable( for='morning-session') SÁNG
-                    input(type='checkbox', name='morning')
+                    label.subject-tag( for='morning-session' ) SÁNG
+                    input#day-checkbox(type='checkbox', name='morning')
                   li
-                    label#lb_Timetable( for='afternoon-session') CHIỀU
-                    input(type='checkbox', name='afternoon')
+                    label.subject-tag( for='afternoon-session' ) CHIỀU
+                    input#day-checkbox(type='checkbox', name='afternoon')
                   li
-                    label#lb_Timetable( for='night-session') TỐI
-                    input(type='checkbox', name='night')
+                    label.subject-tag( for='night-session' ) TỐI
+                    input#day-checkbox(type='checkbox', name='night')
               .row-calendar-check
                 h5 Thứ 7
                 ul
                   li
-                    label#lb_Timetable( for='morning-session') SÁNG
-                    input(type='checkbox', name='morning')
+                    label.subject-tag( for='morning-session' ) SÁNG
+                    input#day-checkbox(type='checkbox', name='morning')
                   li
-                    label#lb_Timetable( for='afternoon-session') CHIỀU
-                    input(type='checkbox', name='afternoon')
+                    label.subject-tag( for='afternoon-session' ) CHIỀU
+                    input#day-checkbox(type='checkbox', name='afternoon')
                   li
-                    label#lb_Timetable( for='night-session') TỐI
-                    input(type='checkbox', name='night')
+                    label.subject-tag( for='night-session' ) TỐI
+                    input#day-checkbox(type='checkbox', name='night')
               .row-calendar-check
                 h5 Chủ nhật
                 ul
                   li
-                    label#lb_Timetable( for='morning-session') SÁNG
-                    input(type='checkbox', name='morning')
+                    label.subject-tag( for='morning-session' ) SÁNG
+                    input#day-checkbox(type='checkbox', name='morning')
                   li
-                    label#lb_Timetable( for='afternoon-session') CHIỀU
-                    input(type='checkbox', name='afternoon')
+                    label.subject-tag( for='afternoon-session' ) CHIỀU
+                    input#day-checkbox(type='checkbox', name='afternoon')
                   li
-                    label#lb_Timetable( for='night-session') TỐI
-                    input( type='checkbox', name='night')  
+                    label.subject-tag( for='night-session' ) TỐI
+                    input#day-checkbox( type='checkbox', name='night')  
                   
           .submit
             input#form_button(type='submit' value='Đăng tin ')
@@ -136,12 +136,24 @@ html
 
     block container
     block script
+      script(src='js/jquery-1.11.3.min.js')
+      //- // jQuery (https://jquery.com/download/)
+      script(src='js/popper.min.js')
+      //- // https://popper.js.org/
+      script(src='js/bootstrap.min.js')
+      //- // https://getbootstrap.com/
+      script(src='js/datepicker.min.js')
+      //- // https://github.com/qodesmith/datepicker
+      script(src='js/jquery.singlePageNav.min.js')
+      //- // Single Page Nav (https://github.com/ChrisWojcik/single-page-nav)
+      script(src='slick/slick.min.js')
+      //- // http://kenwheeler.github.io/slick/
       script.
-        $('').click(function(){
-            $('').addClass('lbl-active');
-          });
-        //- function myFunction() {
-        //-   var element = document.getElementById("lb_Timetable");
-
-        //-   element.classList.add("lbl-active");
-        //- }
+       
+        $('.subject-tag label').click(function () {
+          if($(this).hasClass("lbl-active")){
+              $(this).removeClass("lbl-active");
+          }else{
+              $(this).addClass("lbl-active");
+          }
+        });

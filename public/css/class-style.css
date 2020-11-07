@@ -157,7 +157,7 @@ input {
   border-image: initial;
   border-radius: 2px;
 }
-/* input[type="checkbox" i] {
+input[type="checkbox" i] {
   background-color: initial;
   cursor: default;
   appearance: checkbox;
@@ -165,7 +165,7 @@ input {
   margin: 3px 3px 3px 4px;
   padding: initial;
   border: initial;
-} */
+}
 button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
@@ -183,6 +183,28 @@ input {
   outline: none;
 }
 
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+li {
+  text-align: -webkit-match-parent;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 .lbl-active {
   background: #03ad03 !important;
   color: #fff !important;
