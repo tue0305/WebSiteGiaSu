@@ -22,7 +22,7 @@ module.exports.getClassList = async function (req, res, next) {
             
         })
         setTimeout(function () {
-            console.log(classes)
+            // console.log(classes)
             return res.render("class",{classes:classes}) 
         }, 2000);
     })

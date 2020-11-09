@@ -4,10 +4,11 @@ const uniqueValidator  =  require('mongoose-unique-validator');
 const { Schema } = mongoose;
 require('mongoose-currency').loadType(mongoose);
 const Subject = require('./subject.model')
+const User = require('./user.model')
 //*************************** Enum *******************/
 const DAY = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", 'SATURDAY']
 const STATUS = ["DONE", "IN_PROCESS", "CANCELED"]
-const TIME_EACH_SESSION= ["1", "1.5", "2", "2.5", "3", "3.5"]
+const TIME_EACH_SESSION = ["1", "1.5", "2", "2.5", "3", "3.5"]
 const classSchema = new Schema({
   //Địa điểm
   Location: {
@@ -44,7 +45,7 @@ const classSchema = new Schema({
     type: String,
     enum: TIME_EACH_SESSION,
   },
-  feeEachSession: Number,
+  feeEachSession: String,
 
   //trạng thái lớp :["Đang dạy", "Đã hoàn thành", "Đã hủy"  ]
   Status: {
@@ -64,11 +65,15 @@ classSchema.methods.get_SubjectName = function (data) {
   
 }
 classSchema.pre('save', async function (next) {
-  try {
-    
-  } catch (error) {
-    next(error)
-  }
+  // User.findOneAndUpdate({ _id: this.User.userId }, {
+  //   $push: {Class: this}
+  // }, options, (error, user) => {
+  //   // error: any errors that occurred
+  //   if (error) console.log(error)
+  //   if (user) return json({ mess: "Thanh cong" })
+  //   else return json({mess: "Thanh cong"})
+  //   // doc: the document before updates are applied if `new: false`, or after updates if `new = true`
+  // });
 });
 
 // classSchema.plugin(uniqueValidator);

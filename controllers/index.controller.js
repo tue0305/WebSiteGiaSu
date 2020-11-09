@@ -1,8 +1,9 @@
 const express = require("express");
 const body = require("body-parser");
 const mongoose = require("mongoose");
-var User = require("../models/user.model");
-var Subject = require("../models/subject.model");
+var UserModel = require("../models/user.model");
+var SubjectModel = require("../models/subject.model");
+var ClassModel = require("../models/class.model");
 var dateFormat = require("date-format");
 const fetch = require("node-fetch");
 var bcrypt = require("bcryptjs")
@@ -51,14 +52,14 @@ module.exports.getRegistration = function (req, res, next) {
 };
 module.exports.postRegistration = function (req, res, next) {
   var dateValue = dateFormat("MM-dd-yyyy");
-  var newUser = new User({
+  var newUser = new UserModel({
     phoneNumber: req.body.phone,
     Email: req.body.email,
     // Avartar = req.body.avatar
     Username: req.body.username,
     Password: req.body.password,
     Name: req.body.name,
-
+    
     Gender: req.body.gender,
     DOB: new Date(dateValue),
     Active: true,
@@ -77,7 +78,7 @@ module.exports.postRegistration = function (req, res, next) {
 
 // trang tạo lớp
 module.exports.getCreateClass = function (req, res, next) {
-  Subject.find().then(function (subjects) {
+  SubjectModel.find().then(function (subjects) {
     const getProvinceList = async function (){
       const response = await fetch('https://thongtindoanhnghiep.co/api/city');
       const myJson = await response.json(); //extract JSON from the http response
@@ -99,5 +100,19 @@ module.exports.getCreateClass = function (req, res, next) {
 }
 
 module.exports.postCreateClass = function (req, res, next) {
-  
+  // var newClass = new ClassModel({
+  //   $push: {
+  //     "User.userId": "5f9ed85bd5f22f1aa0494511"
+  //   }
+  // });
+  // newClass.save(function (err) {
+  //   if (err) {
+  //     //console.log(err.message);
+  //     res.render({alert: err.message});
+  //   } else {
+      
+  //     //res.send("User Created successfully");
+  //     res.render("index", {message: 'Đăng ký thành công'});
+  //   }
+  // });
 }

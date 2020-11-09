@@ -23,6 +23,6 @@ router.post('/login', controller.postLogin);
 
 // trang tạo lớp
 router.get('/class-create', controller.getCreateClass);
-router.post('/login-create', controller.postCreateClass);
+router.post('/class-create', controller.postCreateClass);
 
 module.exports = router;

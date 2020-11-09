@@ -44,9 +44,9 @@ html(lang ='en')
                         | Trang chủ 
                         span.sr-only (current)
                     li.nav-item
-                      a.nav-link(href='#tm-section-4') Đầu tư
+                      a.nav-link(href='/class' onclick='parent.location="/class-create"; return false;') Đăng bài
                     li.nav-item
-                      a.nav-link(href='#tm-section-5') Bài viết
+                      a.nav-link(href='/class' onclick='parent.location="/class"; return false;') Bài viết
                     li.nav-item
                       a.nav-link(href='#tm-section-6') Liên hệ
                     li.nav-item
@@ -61,14 +61,14 @@ html(lang ='en')
                 form.tm-search-form.tm-section-pad-2(action='index.html' method='get')
                   .form-row.tm-search-form-row
                     .form-group.tm-form-element.tm-form-element-50
-                      i.fa.fa-map-marker.fa-2x.tm-form-element-icon
-                      input#inputCity.form-control(name='city' type='text' placeholder='Type your destination...')
+                      i.fa.fa-book.fa-2x.tm-form-element-icon
+                      input#inputCity.form-control(name='city' type='text' placeholder='Môn học')
                     .form-group.tm-form-element.tm-form-element-50
-                      i.fa.fa-calendar.fa-2x.tm-form-element-icon
-                      input#inputCheckIn.form-control(name='check-in' type='text' placeholder='Check In')
+                      i.fa.fa-map.fa-2x.tm-form-element-icon
+                      input#inputCheckIn.form-control(name='check-in' type='text' placeholder='Tỉnh thành')
                     .form-group.tm-form-element.tm-form-element-50
-                      i.fa.fa-calendar.fa-2x.tm-form-element-icon
-                      input#inputCheckOut.form-control(name='check-out' type='text' placeholder='Check Out')
+                      i.fa.fa-user.fa-2x.tm-form-element-icon
+                      input#inputCheckOut.form-control(name='check-out' type='text' placeholder='Số học viên')
                     .form-group.tm-form-element.tm-form-element-50
                       button.btn.btn-primary.tm-btn-search(type='submit') Tìm kiếm
     append script    
