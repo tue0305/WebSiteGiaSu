@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:49:56.551Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="Klmjh2jlpB0XAIeQ2KoO" version="13.9.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:50:11.046Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="HrfgEZOlES_J739i85aR" version="13.9.2" type="github" pages="3">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="SD_DangNhap">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -254,7 +254,8 @@
             <mxPoint x="520" y="210" as="sourcePoint" />
             <mxPoint x="690" y="211" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="540" y="210" />
+              <mxPoint x="520" y="240" />
+              <mxPoint x="620" y="240" />
             </Array>
           </mxGeometry>
         </mxCell>
