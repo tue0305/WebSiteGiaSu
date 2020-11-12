@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:46:49.389Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="NNGq3lCLP8hfN2WgAYDO" version="13.9.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:47:56.417Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="6iPxDO-Fg1yOVqPsZDFq" version="13.9.2" type="github" pages="2">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="SD_DangNhap">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -143,7 +143,7 @@
             <mxPoint x="-10" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1XVb67s4uv56YlCwmnby-10" value="Fill out information" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;fontStyle=1" edge="1" parent="ezQofWguG8G_w-3frbcf-1" source="1XVb67s4uv56YlCwmnby-1" target="1XVb67s4uv56YlCwmnby-3">
+        <mxCell id="1XVb67s4uv56YlCwmnby-10" value="Fill registration&lt;br&gt;&amp;nbsp;information" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;fontStyle=1" edge="1" parent="ezQofWguG8G_w-3frbcf-1" source="1XVb67s4uv56YlCwmnby-1" target="1XVb67s4uv56YlCwmnby-3">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="130" as="sourcePoint" />
           </mxGeometry>
