@@ -29,7 +29,7 @@ mongoose.connect(process.env.MONGODB_URL,
     useNewUrlParser: true,
   })
 // ==========================ADMIN SETUP====================
-// const canModifyUser = ({ currentAdmin }) => currentAdmin && currentAdmin.Role === 'ADMIN'
+const canModifyUser = ({ currentAdmin }) => currentAdmin && currentAdmin.Role === 'ADMIN'
 const run = async () => {
   const connection = await mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
@@ -64,9 +64,9 @@ const options = {
           }
           return request
         }, 
-      // edit: { isAccessible: canModifyUser },
-      // delete: { isAccessible: canModifyUser },
-      // new: { isAccessible: canModifyUser },
+      edit: { isAccessible: canModifyUser },
+      delete: { isAccessible: canModifyUser },
+      new: { isAccessible: canModifyUser },
     }
     }
   }],

@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const uniqueValidator  =  require('mongoose-unique-validator');
 
 const { Schema } = mongoose;
-require('mongoose-currency').loadType(mongoose);
+// require('mongoose-currency').loadType(mongoose);
 const Subject = require('./subject.model')
 const User = require('./user.model')
 //*************************** Enum *******************/
@@ -20,7 +20,9 @@ const classSchema = new Schema({
     Day: {
       type: String,
       enum: DAY,
+      unique: true,
     },
+    
     isMorning: Boolean,
     isAfternoon: Boolean,
     isNight: Boolean,
@@ -29,6 +31,7 @@ const classSchema = new Schema({
   Subject: {
     type: Schema.Types.ObjectId,
     ref: 'Subject',
+    required: true
   },
   Description: String,
 
@@ -54,27 +57,20 @@ const classSchema = new Schema({
     default: STATUS.IN_PROCESS,
   },
 });
-classSchema.methods.get_SubjectName = function (data) {
-  Subject.findById(data, (err, subject) => {
-    if(err) {return res.json({err})}
-    return subject
-  })
-  .then((subject) => {
-    return subject
-  })
-  
-}
-classSchema.pre('save', async function (next) {
-  // User.findOneAndUpdate({ _id: this.User.userId }, {
-  //   $push: {Class: this}
-  // }, options, (error, user) => {
-  //   // error: any errors that occurred
-  //   if (error) console.log(error)
-  //   if (user) return json({ mess: "Thanh cong" })
-  //   else return json({mess: "Thanh cong"})
-  //   // doc: the document before updates are applied if `new: false`, or after updates if `new = true`
-  // });
-});
 
-// classSchema.plugin(uniqueValidator);
+
+  
+// classSchema.pre('save', async function (next) {
+//   // User.findOneAndUpdate({ _id: this.User.userId }, {
+//   //   $push: {Class: this}
+//   // }, options, (error, user) => {
+//   //   // error: any errors that occurred
+//   //   if (error) console.log(error)
+//   //   if (user) return json({ mess: "Thanh cong" })
+//   //   else return json({mess: "Thanh cong"})
+//   //   // doc: the document before updates are applied if `new: false`, or after updates if `new = true`
+//   // });
+// });
+
+classSchema.plugin(uniqueValidator);
 module.exports = mongoose.model('Class', classSchema, 'classes');
