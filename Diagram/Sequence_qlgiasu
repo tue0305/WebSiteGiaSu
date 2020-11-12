@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:19:36.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="phWDItmvdOQIaHV8617F" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:21:15.062Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="g_7OXw0BR9nuAn8-U9GY" version="13.9.2" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,13 +7,13 @@
         <mxCell id="OShJKqTTA9bQAAqQt1UR-1" value=":User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="70" y="45" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OShJKqTTA9bQAAqQt1UR-2" value="GUI" style="shape=umlBoundary;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="OShJKqTTA9bQAAqQt1UR-2" value=":LoginView" style="shape=umlBoundary;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="250" y="45" width="100" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="OShJKqTTA9bQAAqQt1UR-3" value=":&lt;span&gt;&lt;b&gt;UserModel&lt;/b&gt;&lt;/span&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="OShJKqTTA9bQAAqQt1UR-3" value=":&lt;span&gt;&lt;span&gt;UserModel&lt;/span&gt;&lt;/span&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="690" y="45" width="80" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="OShJKqTTA9bQAAqQt1UR-4" value="Control Object" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="OShJKqTTA9bQAAqQt1UR-4" value=":SiteController" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="480" y="45" width="80" height="75" as="geometry" />
         </mxCell>
       </root>
