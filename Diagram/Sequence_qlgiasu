@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:44:04.928Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="-gcLaXkVOJYEssMsKXMg" version="13.9.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:44:42.367Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="C_l8u1a8yVEQqqyGi2j6" version="13.9.2" type="github" pages="2">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="SD_DangNhap">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -106,7 +106,7 @@
       <root>
         <mxCell id="ezQofWguG8G_w-3frbcf-0" />
         <mxCell id="ezQofWguG8G_w-3frbcf-1" parent="ezQofWguG8G_w-3frbcf-0" />
-        <mxCell id="1XVb67s4uv56YlCwmnby-0" value="&lt;span&gt;:User&lt;/span&gt;" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;size=40;fontStyle=1" vertex="1" parent="ezQofWguG8G_w-3frbcf-1">
+        <mxCell id="1XVb67s4uv56YlCwmnby-0" value="&lt;span&gt;:NewUser&lt;/span&gt;" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;size=40;fontStyle=1" vertex="1" parent="ezQofWguG8G_w-3frbcf-1">
           <mxGeometry x="110" y="40" width="30" height="380" as="geometry" />
         </mxCell>
         <mxCell id="1XVb67s4uv56YlCwmnby-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontStyle=1" vertex="1" parent="1XVb67s4uv56YlCwmnby-0">
