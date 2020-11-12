@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:52:39.503Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="Rv2j5Xx7EeQhtilfV94G" version="13.9.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:52:53.375Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="fA8nADZ4AFEuhg3g3VOp" version="13.9.2" type="github" pages="3">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="SD_DangNhap">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -280,10 +280,10 @@
         <mxCell id="guyJi1Z-yJ8oDSZT0_QX-15" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="xV9aXbj3_M2xSw0n_lx4-1">
           <mxGeometry x="110" y="410" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fYt0qxcd9nMtS4RvxugL-1" value="CheckvalidUser()" style="html=1;verticalAlign=bottom;endArrow=block;fontStyle=1;" edge="1" parent="xV9aXbj3_M2xSw0n_lx4-1" source="guyJi1Z-yJ8oDSZT0_QX-7">
+        <mxCell id="fYt0qxcd9nMtS4RvxugL-1" value="CheckvalidUser()" style="html=1;verticalAlign=bottom;endArrow=block;fontStyle=1;" edge="1" parent="xV9aXbj3_M2xSw0n_lx4-1" source="guyJi1Z-yJ8oDSZT0_QX-7" target="guyJi1Z-yJ8oDSZT0_QX-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="510" y="200" as="sourcePoint" />
-            <mxPoint x="700" y="200" as="targetPoint" />
+            <mxPoint x="690" y="200" as="targetPoint" />
             <Array as="points">
               <mxPoint x="525" y="200" />
               <mxPoint x="625" y="200" />
