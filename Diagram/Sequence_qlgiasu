@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:33:43.951Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="kqIRbLNpulV4XD6t76d6" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:35:10.355Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="gTq6zXb52DrU94P6Amdx" version="13.9.2" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -21,6 +21,16 @@
         </mxCell>
         <mxCell id="OShJKqTTA9bQAAqQt1UR-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="OShJKqTTA9bQAAqQt1UR-7">
           <mxGeometry x="15" y="80" width="10" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OShJKqTTA9bQAAqQt1UR-25" value="SaveSession()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" target="OShJKqTTA9bQAAqQt1UR-18" parent="OShJKqTTA9bQAAqQt1UR-7" source="OShJKqTTA9bQAAqQt1UR-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="190" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="190" />
+              <mxPoint x="55" y="210" />
+            </Array>
+            <mxPoint x="35" y="210" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="OShJKqTTA9bQAAqQt1UR-8" value="&lt;b&gt;:SiteController&lt;/b&gt;" style="shape=umlLifeline;participant=umlControl;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="480" y="40" width="40" height="360" as="geometry" />
@@ -71,21 +81,8 @@
             <mxPoint x="540" y="260" as="targetPoint" />
             <mxPoint x="670" y="260" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="600" y="250" />
+              <mxPoint x="600" y="270" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OShJKqTTA9bQAAqQt1UR-23" value="SaveSession()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="1" source="OShJKqTTA9bQAAqQt1UR-7" target="OShJKqTTA9bQAAqQt1UR-7">
-          <mxGeometry x="-0.3037" y="36" relative="1" as="geometry">
-            <mxPoint x="730.2" y="181.24" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="765" y="181" />
-              <mxPoint x="765" y="180" />
-              <mxPoint x="780" y="180" />
-              <mxPoint x="780" y="209" />
-            </Array>
-            <mxPoint x="730" y="209" as="targetPoint" />
-            <mxPoint x="1" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
