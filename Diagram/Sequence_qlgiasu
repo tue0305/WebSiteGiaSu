@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:42:25.413Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="3OudadIPq8k9wAO0yPiv" version="13.9.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:43:16.844Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="6sjgKaPpUVbgNlX-3WVm" version="13.9.2" type="github" pages="2">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="SD_DangNhap">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -22,16 +22,6 @@
         <mxCell id="OShJKqTTA9bQAAqQt1UR-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontStyle=1" vertex="1" parent="OShJKqTTA9bQAAqQt1UR-7">
           <mxGeometry x="15" y="80" width="10" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="OShJKqTTA9bQAAqQt1UR-25" value="SaveSession()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontStyle=1" edge="1" target="OShJKqTTA9bQAAqQt1UR-18" parent="OShJKqTTA9bQAAqQt1UR-7" source="OShJKqTTA9bQAAqQt1UR-18">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="30" y="190" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="55" y="190" />
-              <mxPoint x="55" y="210" />
-            </Array>
-            <mxPoint x="35" y="210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="OShJKqTTA9bQAAqQt1UR-8" value="&lt;span&gt;:SiteController&lt;/span&gt;" style="shape=umlLifeline;participant=umlControl;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="480" y="40" width="40" height="360" as="geometry" />
         </mxCell>
@@ -49,6 +39,17 @@
             </Array>
             <mxPoint x="40" y="150" as="targetPoint" />
             <mxPoint x="-10" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OShJKqTTA9bQAAqQt1UR-25" value="SaveSession()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontStyle=1;exitX=1.34;exitY=0.501;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.34;entryY=0.599;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="OShJKqTTA9bQAAqQt1UR-13" parent="OShJKqTTA9bQAAqQt1UR-8" source="OShJKqTTA9bQAAqQt1UR-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="190" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="190" />
+              <mxPoint x="80" y="210" />
+              <mxPoint x="28" y="210" />
+            </Array>
+            <mxPoint x="40" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OShJKqTTA9bQAAqQt1UR-11" value="Điển thông tin đăng nhập" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;fontStyle=1" edge="1" target="OShJKqTTA9bQAAqQt1UR-10" parent="1" source="OShJKqTTA9bQAAqQt1UR-9">
