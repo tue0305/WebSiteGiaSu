@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:59:36.991Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="FyCsSr9aFtl_UZxwFL5Q" version="13.9.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:59:47.170Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="btJqGonM6qaRgyZtk-UJ" version="13.9.2" type="github" pages="3">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="SD_Login">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -244,7 +244,7 @@
             <mxPoint x="130" y="339" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="guyJi1Z-yJ8oDSZT0_QX-11" value="Registration()" style="html=1;verticalAlign=bottom;endArrow=block;fontStyle=1" edge="1" parent="xV9aXbj3_M2xSw0n_lx4-1" target="guyJi1Z-yJ8oDSZT0_QX-6">
+        <mxCell id="guyJi1Z-yJ8oDSZT0_QX-11" value="CreateClass()" style="html=1;verticalAlign=bottom;endArrow=block;fontStyle=1" edge="1" parent="xV9aXbj3_M2xSw0n_lx4-1" target="guyJi1Z-yJ8oDSZT0_QX-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="302" y="149" as="sourcePoint" />
             <mxPoint x="495" y="130.0000000000001" as="targetPoint" />
