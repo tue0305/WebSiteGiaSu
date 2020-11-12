@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:27:39.682Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="Z7DdTILh7xKWB7f56pbp" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:28:05.626Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="SqRIOpMhllzhEPP8Qezm" version="13.9.2" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
         <mxCell id="OShJKqTTA9bQAAqQt1UR-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="OShJKqTTA9bQAAqQt1UR-8">
           <mxGeometry x="15" y="80" width="10" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="OShJKqTTA9bQAAqQt1UR-16" value="self call" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;exitX=1.34;exitY=0.296;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="OShJKqTTA9bQAAqQt1UR-8" parent="OShJKqTTA9bQAAqQt1UR-8" source="OShJKqTTA9bQAAqQt1UR-13">
+        <mxCell id="OShJKqTTA9bQAAqQt1UR-16" value="self call" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;exitX=1.34;exitY=0.296;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="OShJKqTTA9bQAAqQt1UR-13" parent="OShJKqTTA9bQAAqQt1UR-8" source="OShJKqTTA9bQAAqQt1UR-13">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="40" y="120" as="sourcePoint" />
             <Array as="points">
@@ -33,7 +33,7 @@
               <mxPoint x="100" y="120" />
               <mxPoint x="100" y="150" />
             </Array>
-            <mxPoint x="24" y="150" as="targetPoint" />
+            <mxPoint x="40" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OShJKqTTA9bQAAqQt1UR-11" value="Điển thông tin đăng nhập" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="OShJKqTTA9bQAAqQt1UR-10" parent="1" source="OShJKqTTA9bQAAqQt1UR-9">
