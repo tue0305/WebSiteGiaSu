@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T13:59:13.119Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="n1F9J1sJM5maNypVay5C" version="13.9.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-11-12T13:59:36.991Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="FyCsSr9aFtl_UZxwFL5Q" version="13.9.2" type="github" pages="3">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="SD_Login">
     <mxGraphModel dx="1278" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -234,7 +234,7 @@
             <mxPoint x="-10" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="guyJi1Z-yJ8oDSZT0_QX-9" value="Fill registration&lt;br&gt;&amp;nbsp;information" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;fontStyle=1" edge="1" parent="xV9aXbj3_M2xSw0n_lx4-1" source="guyJi1Z-yJ8oDSZT0_QX-1" target="guyJi1Z-yJ8oDSZT0_QX-3">
+        <mxCell id="guyJi1Z-yJ8oDSZT0_QX-9" value="Fill new class&lt;br&gt;&amp;nbsp;information" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;fontStyle=1" edge="1" parent="xV9aXbj3_M2xSw0n_lx4-1" source="guyJi1Z-yJ8oDSZT0_QX-1" target="guyJi1Z-yJ8oDSZT0_QX-3">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="130" as="sourcePoint" />
           </mxGeometry>
