@@ -1,7 +1,7 @@
 const express = require("express");
 const body = require("body-parser");
 const mongoose = require("mongoose");
-var UserModel = require("../models/user.model");
+var User = require("../models/user.model");
 var SubjectModel = require("../models/subject.model");
 var ClassModel = require("../models/class.model");
 var dateFormat = require("date-format");
@@ -52,7 +52,7 @@ module.exports.getRegistration = function (req, res, next) {
 };
 module.exports.postRegistration = function (req, res, next) {
   var dateValue = dateFormat("MM-dd-yyyy");
-  var newUser = new UserModel({
+  var newUser = new User({
     phoneNumber: req.body.phone,
     Email: req.body.email,
     // Avartar = req.body.avatar
