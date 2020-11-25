@@ -6,7 +6,7 @@ const { Schema } = mongoose;
 const Subject = require('./subject.model')
 const User = require('./user.model')
 //*************************** Enum *******************/
-const DAY = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", 'SATURDAY']
+const DAY = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
 const STATUS = ["DONE", "IN_PROCESS", "CANCELED"]
 const TIME_EACH_SESSION = ["1", "1.5", "2", "2.5", "3", "3.5"]
 const classSchema = new Schema({
@@ -20,7 +20,7 @@ const classSchema = new Schema({
     Day: {
       type: String,
       enum: DAY,
-      unique: true,
+      unique: false,
     },
     
     isMorning: Boolean,
@@ -31,7 +31,6 @@ const classSchema = new Schema({
   Subject: {
     type: Schema.Types.ObjectId,
     ref: 'Subject',
-    required: true
   },
   Description: String,
 
@@ -57,20 +56,6 @@ const classSchema = new Schema({
     default: STATUS.IN_PROCESS,
   },
 });
-
-
-  
-// classSchema.pre('save', async function (next) {
-//   // User.findOneAndUpdate({ _id: this.User.userId }, {
-//   //   $push: {Class: this}
-//   // }, options, (error, user) => {
-//   //   // error: any errors that occurred
-//   //   if (error) console.log(error)
-//   //   if (user) return json({ mess: "Thanh cong" })
-//   //   else return json({mess: "Thanh cong"})
-//   //   // doc: the document before updates are applied if `new: false`, or after updates if `new = true`
-//   // });
-// });
 
 classSchema.plugin(uniqueValidator);
 module.exports = mongoose.model('Class', classSchema, 'classes');

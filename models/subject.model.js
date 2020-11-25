@@ -6,7 +6,7 @@ const { Schema } = mongoose;
 const subjectSchema = new Schema({
   Name: {
     type: String,
-    required: true
+    unique: false,
   }, // String is shorthand for {type: String}
   Description: String, // String is shorthand for {type:}
 });

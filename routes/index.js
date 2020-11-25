@@ -14,12 +14,16 @@ const controller = require("../controllers/index.controller");
 /* GET home page. */
 router.get('/', controller.Index);
 
+
 router.get('/registration', controller.getRegistration);
 router.post('/registration', controller.postRegistration)    
 
 // trang đăng nhập
 router.get('/login', controller.getLogin);
 router.post('/login', controller.postLogin);
+
+//Đăng xuất
+router.get('/logout', controller.Logout);
 
 // trang tạo lớp
 router.get('/class-create', controller.getCreateClass);

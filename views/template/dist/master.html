@@ -8,29 +8,6 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/datepicker.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TutorViking</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="manifest" href="img/manifest.json">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <script src="https://kit.fontawesome.com/77fac3ae4f.js" crossorigin="anonymous"></script>
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
     <div id="top" class="tm-main-content">
@@ -38,16 +15,14 @@
       <div id="tm-top-bar" class="tm-top-bar">
         <div class="container">
           <div class="row">
-            <nav class="navbar navbar-expand-lg narbar-light"><a href="/" class="navbar-brand mr-auto"><img src="img/ms-icon-70x70.png" alt="Site logo"></a>
+            <nav class="navbar navbar-expand-lg narbar-light"><a href="#" class="navbar-brand mr-auto"><img src="img/logo.png" alt="Site logo">                                Level</a>
               <button id="nav-toggle" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
               <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a href="#top" class="nav-link">Trang chủ <span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item"><a href="/class" onclick="parent.location=&quot;/class-create&quot;; return false;" class="nav-link">Đăng bài</a></li>
-                  <li class="nav-item"><a href="/class" onclick="parent.location=&quot;/class&quot;; return false;" class="nav-link">Bài viết</a></li>
-                  <li class="nav-item"><a href="#tm-section-6" class="nav-link">Liên hệ</a></li>
-                  <li class="nav-item"><a id="login" href="/login" onclick="parent.location=&quot;/login&quot;; return false;" class="nav-link">Đăng nhập</a></li>
-                  <li class="nav-item"><a id="regis" href="/registration" onclick="parent.location=&quot;/registration&quot;; return false;" class="nav-link">Đăng Ký</a></li>
+                  <li class="nav-item"><a href="#top" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a href="#tm-section-4" class="nav-link">Portfolio</a></li>
+                  <li class="nav-item"><a href="#tm-section-5" class="nav-link">Blog Entries</a></li>
+                  <li class="nav-item"><a href="#tm-section-6" class="nav-link">Contact Us</a></li>
                 </ul>
               </div>
             </nav>
@@ -55,25 +30,78 @@
         </div>
       </div>
       <div id="tm-section-1" class="tm-section tm-bg-img">
-        <div class="container ie-h-align-center-fix">
-          <div class="row"> 
-            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
-              <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
-                <div class="form-row tm-search-form-row">
-                  <div class="form-group tm-form-element tm-form-element-50"><i class="fa fa-book fa-2x tm-form-element-icon"></i>
-                    <input id="inputCity" name="city" type="text" placeholder="Môn học" class="form-control">
+        <div class="tm-bg-white ie-container-width-fix-2">
+          <div class="container ie-h-align-center-fix">
+            <div class="row">
+              <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                  <div class="form-row tm-search-form-row">
+                    <div class="form-group tm-form-element tm-form-element-100"><i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                      <input id="inputCity" name="city" type="text" placeholder="Type your destination..." class="form-control">
+                    </div>
+                    <div class="form-group tm-form-element tm-form-element-50"><i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                      <input id="inputCheckIn" name="check-in" type="text" placeholder="Check In" class="form-control">
+                    </div>
+                    <div class="form-group tm-form-element tm-form-element-50"><i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                      <input id="inputCheckOut" name="check-out" type="text" placeholder="Check Out" class="form-control">
+                    </div>
                   </div>
-                  <div class="form-group tm-form-element tm-form-element-50"><i class="fa fa-map fa-2x tm-form-element-icon"></i>
-                    <input id="inputCheckIn" name="check-in" type="text" placeholder="Tỉnh thành" class="form-control">
+                  <div class="form-row tm-search-form-row">
+                    <div class="form-group tm-form-element tm-form-element-2">
+                      <select id="adult" name="adult" class="form-control tm-select">
+                        <option value="">Adult</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select><i class="fa fa-2x fa-user tm-form-element-icon"></i>
+                    </div>
+                    <div class="form-group tm-form-element tm-form-element-2">
+                      <select id="children" name="children" class="form-control tm-select">
+                        <option value="">Children</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select><i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
+                    </div>
+                    <div class="form-group tm-form-element tm-form-element-2">
+                      <select id="room" name="room" class="form-control tm-select">
+                        <option value="">Room</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select><i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                    </div>
+                    <div class="form-group tm-form-element tm-form-element-2">
+                      <button type="submit" class="btn btn-primary tm-btn-search">Check Availability</button>
+                    </div>
                   </div>
-                  <div class="form-group tm-form-element tm-form-element-50"><i class="fa fa-user fa-2x tm-form-element-icon"></i>
-                    <input id="inputCheckOut" name="check-out" type="text" placeholder="Số học viên" class="form-control">
+                  <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                    <p class="tm-margin-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a>
                   </div>
-                  <div class="form-group tm-form-element tm-form-element-50">
-                    <button type="submit" class="btn btn-primary tm-btn-search">Tìm kiếm</button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -308,7 +336,7 @@
         <div class="container">
           <div class="row">
             <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">Copyright © <span class="tm-current-year">2018</span> Your Company
-                                      - Design: Tooplate
+                                      - Design: Tooplat
             </p>
           </div>
         </div>

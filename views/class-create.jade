@@ -4,6 +4,8 @@ html
   head
     
   body
+    block css
+      link(rel='stylesheet' href='css/class.css')
     block form
       #container
         h1 • THÔNG TIN LỚP MỚI •
@@ -25,135 +27,118 @@ html
 
         form#contact_form(method='post')
           .subject
-              inputtitle_input(type='text' placeholder='TIÊU ĐỀ (mô tả ngắn gọn) ' name='title' required='')
+              input#title_input(type='text' placeholder='TIÊU ĐỀ (mô tả ngắn gọn) ' name='title' required='')
           .name
             select#subject_input(placeholder='Môn học' name='subject' required='')
               option(disabled='' hidden='' selected='') MÔN HỌC
               each s in subjects
-                option #{s.Name}
-          
-          .subject
-            inputtelephone_input(type='text' placeholder='My number is' name='telephone' required='')
+                option #{s.Name} 
           .name
             select#subject_input(placeholder='Subject line' name='province' required='')
               option(disabled='' hidden='' selected='') TỈNH THÀNH
               each p in provinces
                 option #{p.Title}
+          .name
+            select#subject_input(placeholder='Subject line' name='time_each_session' required='')
+              option(disabled='' hidden='' selected='') THỜI GIAN DẠY MỖI BUỔI
+              each val in ['1', '1.5', '2', '2.5', '3' , '3.5']
+                option #{val}
+          .telephone
+            input#telephone_input.telephone(type='text' placeholder='SỐ ĐIỆN THOẠI' name='telephone' required='' maxlength='12')
+          .telephone
+            input#telephone_input.telephone(type='text' placeholder='PHÍ MỖI BUỔI (vd: 500000VND/buổi)' name='fee' required='' maxlength='14')
+          .address
+            input#telephone_input.telephone(type='text' placeholder='ĐỊA CHỈ CỤ THỂ' name='address' required='')
           .message
             label.subject-tag(for='description')
             textarea#description_input(style="background-color:white; opacity:0.8" name='description' placeholder="MÔ TẢ CHI TIẾT" cols='30' rows='5' )
-            .message
-            label.subject-tag(for='timetable') Thời khóa biểu
+          .message
+            label.subject-tag(for='timetable') THỜI KHÓA BIỂU
             .calendar-list-picker
               .row-calendar-check
                 h5 Thứ 2
                 ul
                   li
                     label.subject-tag( for='morning-session' ) SÁNG
-                    input#day-checkbox(type='checkbox', name='morning')
+                    input#day-checkbox(name='checkbox_2' type='checkbox' value='M' )
                   li
                     label.subject-tag( for='afternoon-session' ) CHIỀU
-                    input#day-checkbox(type='checkbox', name='afternoon')
+                    input#day-checkbox(name='checkbox_2' type='checkbox' value='A')
                   li
                     label.subject-tag( for='night-session' ) TỐI
-                    input#day-checkbox(type='checkbox', name='night')
+                    input#day-checkbox(name='checkbox_2' type='checkbox' value='N')
               .row-calendar-check
                 h5 Thứ 3
                 ul
                   li
                     label.subject-tag( for='morning-session' ) SÁNG
-                    input#day-checkbox(type='checkbox', name='morning')
+                    input#day-checkbox(name='checkbox_3' type='checkbox' value='M' )
                   li
                     label.subject-tag( for='afternoon-session' ) CHIỀU
-                    input#day-checkbox(type='checkbox', name='afternoon')
+                    input#day-checkbox(name='checkbox_3' type='checkbox' value='A')
                   li
                     label.subject-tag( for='night-session' ) TỐI
-                    input#day-checkbox(type='checkbox', name='night')
+                    input#day-checkbox(name='checkbox_3' type='checkbox' value='N')
               .row-calendar-check
                 h5 Thứ 4
                 ul
                   li
                     label.subject-tag( for='morning-session' ) SÁNG
-                    input#day-checkbox(type='checkbox', name='morning')
+                    input#day-checkbox(name='checkbox_4' type='checkbox' value='M' )
                   li
                     label.subject-tag( for='afternoon-session' ) CHIỀU
-                    input#day-checkbox(type='checkbox', name='afternoon')
+                    input#day-checkbox(name='checkbox_4' type='checkbox' value='A')
                   li
                     label.subject-tag( for='night-session' ) TỐI
-                    input#day-checkbox(type='checkbox', name='night')
+                    input#day-checkbox(name='checkbox_4' type='checkbox' value='N')
               .row-calendar-check
                 h5 Thứ 5
                 ul
                   li
                     label.subject-tag( for='morning-session' ) SÁNG
-                    input#day-checkbox(type='checkbox', name='morning')
+                    input#day-checkbox(name='checkbox_5' type='checkbox' value='M' )
                   li
                     label.subject-tag( for='afternoon-session' ) CHIỀU
-                    input#day-checkbox(type='checkbox', name='afternoon')
+                    input#day-checkbox(name='checkbox_5' type='checkbox' value='A')
                   li
                     label.subject-tag( for='night-session' ) TỐI
-                    input#day-checkbox(type='checkbox', name='night')
+                    input#day-checkbox(name='checkbox_5' type='checkbox' value='N')
               .row-calendar-check
                 h5 Thứ 6
                 ul
                   li
                     label.subject-tag( for='morning-session' ) SÁNG
-                    input#day-checkbox(type='checkbox', name='morning')
+                    input#day-checkbox(name='checkbox_6' type='checkbox' value='M' )
                   li
                     label.subject-tag( for='afternoon-session' ) CHIỀU
-                    input#day-checkbox(type='checkbox', name='afternoon')
+                    input#day-checkbox(name='checkbox_6' type='checkbox' value='A')
                   li
                     label.subject-tag( for='night-session' ) TỐI
-                    input#day-checkbox(type='checkbox', name='night')
+                    input#day-checkbox(name='checkbox_6' type='checkbox' value='N')
               .row-calendar-check
                 h5 Thứ 7
                 ul
                   li
                     label.subject-tag( for='morning-session' ) SÁNG
-                    input#day-checkbox(type='checkbox', name='morning')
+                    input#day-checkbox(name='checkbox_7' type='checkbox' value='M' )
                   li
                     label.subject-tag( for='afternoon-session' ) CHIỀU
-                    input#day-checkbox(type='checkbox', name='afternoon')
+                    input#day-checkbox(name='checkbox_7' type='checkbox' value='A')
                   li
                     label.subject-tag( for='night-session' ) TỐI
-                    input#day-checkbox(type='checkbox', name='night')
+                    input#day-checkbox(name='checkbox_7' type='checkbox' value='N')
               .row-calendar-check
                 h5 Chủ nhật
                 ul
                   li
                     label.subject-tag( for='morning-session' ) SÁNG
-                    input#day-checkbox(type='checkbox', name='morning')
+                    input#day-checkbox(name='checkbox_8' type='checkbox' value='M' )
                   li
                     label.subject-tag( for='afternoon-session' ) CHIỀU
-                    input#day-checkbox(type='checkbox', name='afternoon')
+                    input#day-checkbox(name='checkbox_8' type='checkbox' value='A')
                   li
                     label.subject-tag( for='night-session' ) TỐI
-                    input#day-checkbox( type='checkbox', name='night')  
-                  
+                    input#day-checkbox(name='checkbox_8'  type='checkbox' value='N')       
           .submit
             input#form_button(type='submit' value='Đăng tin ')
-
-
     block container
-    block script
-      script(src='js/jquery-1.11.3.min.js')
-      //- // jQuery (https://jquery.com/download/)
-      script(src='js/popper.min.js')
-      //- // https://popper.js.org/
-      script(src='js/bootstrap.min.js')
-      //- // https://getbootstrap.com/
-      script(src='js/datepicker.min.js')
-      //- // https://github.com/qodesmith/datepicker
-      script(src='js/jquery.singlePageNav.min.js')
-      //- // Single Page Nav (https://github.com/ChrisWojcik/single-page-nav)
-      script(src='slick/slick.min.js')
-      //- // http://kenwheeler.github.io/slick/
-      script.
-       
-        $('.subject-tag label').click(function () {
-          if($(this).hasClass("lbl-active")){
-              $(this).removeClass("lbl-active");
-          }else{
-              $(this).addClass("lbl-active");
-          }
-        });

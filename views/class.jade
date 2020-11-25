@@ -3,8 +3,29 @@ doctype html
 html
   head 
     block css
-       link(rel='stylesheet' href='css/class-style.css')
+       link(rel='stylesheet' href='css/class.css')
   body 
+        //- block form
+        //-   .container.ie-h-align-center-fix
+        //-     .row 
+        //-       .col-xs-12.ml-auto.mr-auto.ie-container-width-fix
+        //-         form.tm-search-form.tm-section-pad-2(action='index.html' method='get')
+        //-           .form-row.tm-search-form-row
+        //-             .form-group.tm-form-element.tm-form-element-50
+        //-               i.fa.fa-book.fa-2x.tm-form-element-icon
+        //-               input#inputCity.form-control(name='city' type='text' placeholder='Môn học')
+        //-             .form-group.tm-form-element.tm-form-element-50
+        //-               i.fa.fa-map.fa-2x.tm-form-element-icon
+        //-               select#select_province.form-control(placeholder='Subject line' type='select' name='province' required='')
+        //-                 option(disabled='' hidden='' selected='') TỈNH THÀNH
+        //-                 each p in provinces
+        //-                   option #{p.Title}
+        //-             .form-group.tm-form-element.tm-form-element-50
+        //-               i.fa.fa-user.fa-2x.tm-form-element-icon
+        //-               input#inputCheckOut.form-control(name='check-out' type='text' placeholder='Số học viên')
+        //-             .form-group.tm-form-element.tm-form-element-50
+        //-               button.btn.btn-primary.tm-btn-search(type='submit') Tìm kiếm
+
     block container 
       .tm-section.tm-position-relative
           
@@ -55,6 +76,6 @@ html
                               i.fa.fa-exclamation-circle.fa-first
                             | )
                           .action-group.text-right.show-when-hover
-                            a.btn-yellow.btn.ctools-use-modal.ctools-use-modal-processed(href='/lop-hoc-user/6793/dang-ky-day') Đề Nghị Dạy
+                            a.btn-yellow.btn.ctools-use-modal.ctools-use-modal-processed(href='#') Đề Nghị Dạy
 
               

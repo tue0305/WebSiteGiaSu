@@ -1,9 +1,6 @@
 /*
-
 Template 2095 Level
-
 http://www.tooplate.com/view/2095-level
-
 */
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -46,6 +43,7 @@ textarea {
   margin: 0px auto;
   position: relative;
   width: 90%;
+  padding-top: 20px;
 }
 
 form {
@@ -84,6 +82,9 @@ h1 {
 .email {
 	float: right;
 	width: 45%;
+}
+.list-group-item{
+  margin-top:10px
 }
 .calendar-list-picker {
   display: flex;
@@ -157,7 +158,7 @@ input {
   border-image: initial;
   border-radius: 2px;
 }
-input[type="checkbox" i] {
+/* input[type="checkbox" i] {
   background-color: initial;
   cursor: default;
   appearance: checkbox;
@@ -165,7 +166,7 @@ input[type="checkbox" i] {
   margin: 3px 3px 3px 4px;
   padding: initial;
   border: initial;
-}
+} */
 button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
@@ -181,30 +182,9 @@ input[type="radio"], input[type="checkbox"] {
 input {
   padding-left: 4px;
   outline: none;
+  
 }
 
-label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: 700;
-}
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-li {
-  text-align: -webkit-match-parent;
-}
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
 .lbl-active {
   background: #03ad03 !important;
   color: #fff !important;
@@ -248,14 +228,20 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 	outline: none;
 	padding: 0 0 0.875em 0;
 }
-
 .message {
-	float: none;
+  float: none;
+  
+}
+#description_input{
+  padding: 10px;
+  
 }
 
 .name {
 	float: left;
-	width: 45%;
+  width: 25%;
+  margin-right: 20px;
+  height: 50px;
 }
 
 select {
@@ -274,6 +260,11 @@ select::-ms-expand {
 }
 
 .telephone {
+  display: inline-block;
+  width: 30%;
+  margin-right: 20px;
+}
+.address {
   width: 100%;
 }
 
@@ -616,7 +607,10 @@ select.tm-select::-ms-expand { display: none; }
     font-weight: 400;
     min-width: 150px;
     border-radius: 2px;
-    height: 10px;
+    
+}
+.row-request{
+    height: 140px;
 }
 .row-request a {
     color: #302a2a;
@@ -696,6 +690,7 @@ select.tm-select::-ms-expand { display: none; }
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    
 }
 img {
     margin-left: 0.4rem;
@@ -925,7 +920,8 @@ video {
 	background-color: #F4F4F4;
 	border: none;
 	font-size: 0.8rem;
-	font-weight: 300;
+    font-weight: 300;
+    
 }
 
 .clearfix:after {

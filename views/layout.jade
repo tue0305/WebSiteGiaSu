@@ -34,7 +34,7 @@ html(lang ='en')
             .row
               nav.navbar.navbar-expand-lg.narbar-light
                 a.navbar-brand.mr-auto(href='/')
-                  img(src='img/ms-icon-70x70.png' alt='Site logo')                       
+                  img(src='img/ms-icon-70x70.png' alt='Site logo')                      
                 button#nav-toggle.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#mainNav' aria-expanded='false' aria-label='Toggle navigation')
                   span.navbar-toggler-icon
                 #mainNav.collapse.navbar-collapse.tm-bg-white
@@ -49,10 +49,16 @@ html(lang ='en')
                       a.nav-link(href='/class' onclick='parent.location="/class"; return false;') Bài viết
                     li.nav-item
                       a.nav-link(href='#tm-section-6') Liên hệ
-                    li.nav-item
-                      a#login.nav-link(href='/login' onclick='parent.location="/login"; return false;') Đăng nhập
-                    li.nav-item
-                      a#regis.nav-link(href='/registration' onclick='parent.location="/registration"; return false;') Đăng Ký
+                    -if(username)
+                      li.nav-item
+                        a#info.nav-link(href='#' onclick='parent.location="#"; return false;') Hi #{username}
+                      li.nav-item
+                        a#logout.nav-link(href='/logout' onclick='parent.location="/logout"; return false;') Đăng xuất
+                    -else
+                      li.nav-item
+                        a#login.nav-link(href='/login' onclick='parent.location="/login"; return false;') Đăng nhập
+                      li.nav-item
+                        a#regis.nav-link(href='/registration' onclick='parent.location="/registration"; return false;') Đăng Ký
        
         block form
           .container.ie-h-align-center-fix
@@ -71,6 +77,6 @@ html(lang ='en')
                       input#inputCheckOut.form-control(name='check-out' type='text' placeholder='Số học viên')
                     .form-group.tm-form-element.tm-form-element-50
                       button.btn.btn-primary.tm-btn-search(type='submit') Tìm kiếm
-    append script    
+      
 
         

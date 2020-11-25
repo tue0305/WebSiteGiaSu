@@ -163,7 +163,11 @@ p {
 	font-family:  'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 0.8rem;
 }
-
+#select_province{
+	/* padding:10px; */
+	padding-left: 50px;
+	padding-bottom: 10px;
+}
 .form-control {
 	height: 40px;
 	border-radius: 0;
